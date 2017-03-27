@@ -1,0 +1,76 @@
+﻿/* Application specific styles */
+
+body {
+    /*padding-top: 80px;*/
+}
+
+/* Styles for angular ui transition animations */
+
+.angular-animation-container {
+    position: relative;
+}
+
+.shuffle-animation.ng-enter,
+.shuffle-animation.ng-leave {
+    position: absolute;
+}
+
+.shuffle-animation.ng-enter {
+    -moz-transition: ease-out all 0.3s 0.4s;
+    -o-transition: ease-out all 0.3s 0.4s;
+    -webkit-transition: ease-out all 0.3s 0.4s;
+    transition: ease-out all 0.3s 0.4s;
+    left: 2em;
+    opacity: 0;
+
+    &.ng-enter-active {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.shuffle-animation.ng-leave {
+    -moz-transition: 0.3s ease-out all;
+    -o-transition: 0.3s ease-out all;
+    -webkit-transition: 0.3s ease-out all;
+    transition: 0.3s ease-out all;
+    left: 0;
+    opacity: 1;
+
+    &.ng-leave-active {
+        left: 2em;
+        opacity: 0;
+    }
+}
+
+/* Styles for special form-based controls */
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+/* Styles for ui-grid action button */
+
+.dropdown-menu .dropdown-plus-title {
+	width: 100%;
+	color: rgb(51, 51, 51);
+	padding: 6px 12px;
+	font-weight: 800;
+	border: 0 solid rgb(173, 173, 173);
+	border-bottom-width: 2px;
+	cursor: pointer;
+}
+
+.btn.dropdown-toggle.btn-primary ~ .dropdown-menu .dropdown-plus-title {
+    border-color: rgb(53, 126, 189);
+}

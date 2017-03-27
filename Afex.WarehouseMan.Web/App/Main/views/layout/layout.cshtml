@@ -1,0 +1,106 @@
+﻿@using System.Threading
+@using System.Web.Optimization
+@using Abp.Timing
+@using Abp.Web.Mvc.Extensions
+@{
+    SetAntiForgeryCookie();
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Oryx TranSync</title>
+
+    @*<link rel="shortcut icon" href="~/favicon.ico">*@
+
+    @Styles.Render("~/Bundles/App/vendor/css")
+    @Styles.Render("~/Bundles/App/Main/css")
+    @Styles.Render("~/Bundles/App/AdminLTE/css")
+
+    <script type="text/javascript">
+        //This is used to get the application's root path from javascript. It's useful if you're running application in a virtual directory under IIS.
+        var abp = abp || {}; abp.appPath = '@ApplicationPath';
+    </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="@Url.Content("~/Scripts/others/html5shiv.js")"></script>
+        <script src="@Url.Content("~/Scripts/others/respond.min.js")"></script>
+    <![endif]-->
+    @*@Scripts.Render("~/Bundles/App/vendor/js")*@
+
+    @Scripts.Render("~/AdminLTE/plugins/jquery/js")
+    @Scripts.Render("~/AdminLTE/bootstrap/js")
+    @Scripts.Render("~/AdminLTE/plugins/slimscroll/js")
+    @Scripts.Render("~/AdminLTE/plugins/fastclick/js")
+    @Scripts.Render("~/Scripts/Shared/_Layout")
+    @Scripts.Render("~/Bundles/App/vendor/js")
+    @Scripts.Render("~/AdminLTE/dist/js")
+
+    <script>
+        //Localizing momentjs
+        moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
+    </script>
+
+    <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
+    <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
+    <script src="~/api/AbpServiceProxies/GetAll?type=angular&v=@(Clock.Now.Ticks)"></script>
+    <script src="~/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
+
+    <!-- SignalR scripts -->
+    <script src="~/signalr/hubs"></script>
+    @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.signalr.js")
+
+    @Scripts.Render("~/Bundles/App/Main/js")
+
+    <script src="~/Scripts/angular-touch.min.js"></script>
+    <script src="~/Scripts/angular-animate.min.js"></script>
+    <script src="~/Scripts/ui-grid.min.js"></script>
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div ng-app="app">
+        <div ng-controller="app.views.layout as vm" class="wrapper">
+            <div ng-include="'/App/Main/views/layout/headerLte.cshtml'"></div>
+            <div ng-include="'/App/Main/views/layout/sidebar.cshtml'"></div>
+            <div class="content-wrapper">
+                <section class="content-header">
+                    <h1>
+                        {{vm.currentMenuName}}
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a data-target="#"><i class="fa fa-dashboard"></i>@ViewBag.SubTitle</a></li>
+                        <li class="active">{{vm.currentMenuName}}</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <div class="angular-animation-container row">
+                        <div ui-view class="shuffle-animation col-xs-12"></div>
+                    </div>
+                </section>
+            </div>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 2.3.3
+                </div>
+                <strong>Copyrights | Oryx | Layout &copy; @DateTime.Now.Year .</strong> All rights
+                reserved.
+            </footer>
+
+        </div>
+        @*<div ng-controller="app.views.layout as vm">
+            <div ng-include="'/App/Main/views/layout/header.cshtml'"></div>
+            <div class="container">
+                <div class="angular-animation-container row">
+                    <div ui-view class="shuffle-animation col-xs-12"></div>
+                </div>
+            </div>
+        </div>*@
+    </div>
+</body>
+</html>

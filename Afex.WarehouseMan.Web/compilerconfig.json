@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "App/Main/main.css",
+    "inputFile": "App/Main/main.less"
+  },
+  {
+    "outputFile": "App/Main/views/customers/customers.css",
+    "inputFile": "App/Main/views/customers/customers.less"
+  }
+]

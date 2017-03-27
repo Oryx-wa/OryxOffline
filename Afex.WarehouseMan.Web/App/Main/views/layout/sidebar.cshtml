@@ -1,0 +1,31 @@
+﻿<aside class="main-sidebar" ng-controller="app.views.layout.sidebar as vm">
+    <section class="sidebar">
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="~/AdminLTE/dist/img/user.svg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>{{vm.getShownUserName()}}</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li ng-repeat="menuItem in vm.menu.items" ng-class="{active: vm.currentMenuName == menuItem.name, treeview: menuItem.items.length > 0}">
+                <a ng-if="!menuItem.items.length" ng-href="{{menuItem.url}}"><i class="{{menuItem.icon}}" ng-if="menuItem.icon"></i> <span>{{menuItem.displayName}}</span> </a>
+                <a ng-if="menuItem.items.length" href=""><i class="{{menuItem.icon}}" ng-if="menuItem.icon"></i> <span>{{menuItem.displayName}}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul ng-if="menuItem.items.length > 0" class="treeview-menu">
+                    <li ng-repeat="menuSubItem in menuItem.items" ng-class="{active: vm.currentMenuName == menuSubItem.name, treeview: menuSubItem.items.length > 0}">
+                        <a ng-if="!menuSubItem.items.length" ng-href="{{menuSubItem.url}}"><i class="{{menuSubItem.icon}}" ng-if="menuSubItem.icon"></i> {{menuSubItem.displayName}}</a>
+                        <a ng-if="menuSubItem.items.length" href=""><i class="{{menuSubItem.icon}}" ng-if="menuSubItem.icon"></i> <span>{{menuSubItem.displayName}}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul ng-if="menuSubItem.items.length > 0" class="treeview-menu">
+                            <li ng-repeat="menuSubItem2 in menuSubItem.items" ng-class="{active: vm.currentMenuName == menuSubItem2.name}">
+                                <a ng-href="{{menuSubItem2.url}}"><i class="{{menuSubItem2.icon}}" ng-if="menuSubItem2.icon"></i> {{menuSubItem2.displayName}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</aside>
