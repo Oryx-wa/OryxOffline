@@ -2,7 +2,7 @@
 using Abp.AutoMapper;
 using Abp.Modules;
 
-namespace SampleLTE
+namespace Afex.WarehouseMan
 {
     [DependsOn(typeof(SampleLTECoreModule), typeof(AbpAutoMapperModule))]
     public class SampleLTEApplicationModule : AbpModule

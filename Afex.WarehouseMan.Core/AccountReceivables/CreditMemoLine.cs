@@ -1,6 +1,6 @@
 ﻿using Abp.Domain.Entities.Auditing;
-using SampleLTE.Common;
-using SampleLTE.Items;
+using Afex.WarehouseMan.Common;
+using Afex.WarehouseMan.Items;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SampleLTE.AccountReceivables
+namespace Afex.WarehouseMan.AccountReceivables
 {
     public class CreditMemoLine : CreationAuditedEntity
     {

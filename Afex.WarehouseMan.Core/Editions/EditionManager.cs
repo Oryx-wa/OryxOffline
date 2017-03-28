@@ -2,7 +2,7 @@
 using Abp.Application.Features;
 using Abp.Domain.Repositories;
 
-namespace SampleLTE.Editions
+namespace Afex.WarehouseMan.Editions
 {
     public class EditionManager : AbpEditionManager
     {

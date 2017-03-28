@@ -7,8 +7,8 @@
     <ProjectGuid>{6F98C2F2-898A-421B-BE3D-68FE69EC0646}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleLTE.Migrator</RootNamespace>
-    <AssemblyName>SampleLTE.Migrator</AssemblyName>
+    <RootNamespace>Afex.WarehouseMan.Migrator</RootNamespace>
+    <AssemblyName>Afex.WarehouseMan.Migrator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -144,12 +144,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SampleLTE.Core\Afex.WarehouseMan.Core.csproj">
-      <Project>{17298EA0-AF73-4F30-B6F1-2066100D7D74}</Project>
+    <ProjectReference Include="..\..\Afex.WarehouseMan.Core\Afex.WarehouseMan.Core.csproj">
+      <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>Afex.WarehouseMan.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SampleLTE.EntityFramework\Afex.WarehouseMan.EntityFramework.csproj">
-      <Project>{3979F157-DEB0-4878-AB1D-4CEF6B5A1300}</Project>
+    <ProjectReference Include="..\..\Afex.WarehouseMan.EntityFramework\Afex.WarehouseMan.EntityFramework.csproj">
+      <Project>{3979f157-deb0-4878-ab1d-4cef6b5a1300}</Project>
       <Name>Afex.WarehouseMan.EntityFramework</Name>
     </ProjectReference>
   </ItemGroup>

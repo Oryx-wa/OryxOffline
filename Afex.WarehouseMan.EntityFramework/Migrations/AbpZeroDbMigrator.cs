@@ -2,9 +2,9 @@
 using Abp.Domain.Uow;
 using Abp.MultiTenancy;
 using Abp.Zero.EntityFramework;
-using SampleLTE.EntityFramework;
+using Afex.WarehouseMan.EntityFramework;
 
-namespace SampleLTE.Migrations
+namespace Afex.WarehouseMan.Migrations
 {
     public class AbpZeroDbMigrator : AbpZeroDbMigrator<SampleLTEDbContext, Configuration>
     {

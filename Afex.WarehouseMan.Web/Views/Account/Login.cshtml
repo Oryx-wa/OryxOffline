@@ -1,6 +1,6 @@
 ﻿@using Abp.Web.Mvc.Extensions
 @using Microsoft.Owin.Security
-@model SampleLTE.Web.Models.Account.LoginFormViewModel
+@model Afex.WarehouseMan.Web.Models.Account.LoginFormViewModel
 @section Styles
 {
     @Html.IncludeStyle("~/Views/Account/Login.css")
@@ -21,7 +21,7 @@
                         {
                             <div class="form-group">
                                 <div class="col-lg-12">
-                                    <input type="text" class="form-control" id="TenancyName" placeholder="@L("TenancyName")" required maxlength="@SampleLTE.MultiTenancy.Tenant.MaxTenancyNameLength">
+                                    <input type="text" class="form-control" id="TenancyName" placeholder="@L("TenancyName")" required maxlength="@Afex.WarehouseMan.MultiTenancy.Tenant.MaxTenancyNameLength">
                                     <span class="text-muted">@L("CanBeEmptyToLoginAsHost")</span>
                                 </div>
                             </div>
@@ -33,13 +33,13 @@
 
                         <div class="form-group">
                             <div class="col-lg-12">
-                                <input type="text" class="form-control" id="EmailAddressInput" placeholder="@L("UserNameOrEmail")" required maxlength="@SampleLTE.Users.User.MaxEmailAddressLength">
+                                <input type="text" class="form-control" id="EmailAddressInput" placeholder="@L("UserNameOrEmail")" required maxlength="@Afex.WarehouseMan.Users.User.MaxEmailAddressLength">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-lg-12">
-                                <input type="password" class="form-control" id="PasswordInput" placeholder="@L("Password")" required maxlength="@SampleLTE.Users.User.MaxPlainPasswordLength">
+                                <input type="password" class="form-control" id="PasswordInput" placeholder="@L("Password")" required maxlength="@Afex.WarehouseMan.Users.User.MaxPlainPasswordLength">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" id="RememberMeInput">

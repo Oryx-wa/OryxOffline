@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Navigation;
 using Abp.Localization;
-using SampleLTE.Authorization;
+using Afex.WarehouseMan.Authorization;
 
-namespace SampleLTE.Web
+namespace Afex.WarehouseMan.Web
 {
     /// <summary>
     /// This class defines menus for the application.

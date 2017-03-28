@@ -3,7 +3,7 @@ using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 
-namespace SampleLTE.Users.Dto
+namespace Afex.WarehouseMan.Users.Dto
 {
     [AutoMap(typeof(User))]
     public class CreateUserInput

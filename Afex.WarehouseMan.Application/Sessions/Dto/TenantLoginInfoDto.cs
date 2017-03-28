@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using SampleLTE.MultiTenancy;
+using Afex.WarehouseMan.MultiTenancy;
 
-namespace SampleLTE.Sessions.Dto
+namespace Afex.WarehouseMan.Sessions.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
     public class TenantLoginInfoDto : EntityDto

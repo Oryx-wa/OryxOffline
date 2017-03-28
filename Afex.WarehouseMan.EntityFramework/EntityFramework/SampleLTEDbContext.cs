@@ -1,17 +1,17 @@
 ﻿using System.Data.Common;
 using Abp.Zero.EntityFramework;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
-using SampleLTE.Items;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
+using Afex.WarehouseMan.Items;
 using System.Data.Entity;
-using SampleLTE.Common;
-using SampleLTE.AccountPayables;
-using SampleLTE.AccountReceivables;
+using Afex.WarehouseMan.Common;
+using Afex.WarehouseMan.AccountPayables;
+using Afex.WarehouseMan.AccountReceivables;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using SampleLTE.BusinessPartners;
+using Afex.WarehouseMan.BusinessPartners;
 
-namespace SampleLTE.EntityFramework
+namespace Afex.WarehouseMan.EntityFramework
 {
     public class SampleLTEDbContext : AbpZeroDbContext<Tenant, Role, User>
     {

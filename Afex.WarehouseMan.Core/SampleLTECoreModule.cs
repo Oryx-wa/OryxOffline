@@ -4,12 +4,12 @@ using Abp.Localization.Dictionaries.Xml;
 using Abp.Modules;
 using Abp.Zero;
 using Abp.Zero.Configuration;
-using SampleLTE.Authorization;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Authorization;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE
+namespace Afex.WarehouseMan
 {
     [DependsOn(typeof(AbpZeroCoreModule))]
     public class SampleLTECoreModule : AbpModule
@@ -32,7 +32,7 @@ namespace SampleLTE
                     SampleLTEConsts.LocalizationSourceName,
                     new XmlEmbeddedFileLocalizationDictionaryProvider(
                         Assembly.GetExecutingAssembly(),
-                        "SampleLTE.Localization.Source"
+                        "Afex.WarehouseMan.Localization.Source"
                         )
                     )
                 );

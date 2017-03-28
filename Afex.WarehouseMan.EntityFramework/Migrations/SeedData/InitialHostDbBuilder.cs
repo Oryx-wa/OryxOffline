@@ -1,7 +1,7 @@
-﻿using SampleLTE.EntityFramework;
+﻿using Afex.WarehouseMan.EntityFramework;
 using EntityFramework.DynamicFilters;
 
-namespace SampleLTE.Migrations.SeedData
+namespace Afex.WarehouseMan.Migrations.SeedData
 {
     public class InitialHostDbBuilder
     {

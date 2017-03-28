@@ -2,9 +2,9 @@
 using Abp.Configuration;
 using Abp.Localization;
 using Abp.Net.Mail;
-using SampleLTE.EntityFramework;
+using Afex.WarehouseMan.EntityFramework;
 
-namespace SampleLTE.Migrations.SeedData
+namespace Afex.WarehouseMan.Migrations.SeedData
 {
     public class DefaultSettingsCreator
     {

@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.IdentityFramework;
 using Abp.Runtime.Session;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 using Microsoft.AspNet.Identity;
 
-namespace SampleLTE
+namespace Afex.WarehouseMan
 {
     /// <summary>
     /// Derive your application services from this class.

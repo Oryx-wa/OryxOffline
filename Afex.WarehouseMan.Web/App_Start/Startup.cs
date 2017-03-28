@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using Abp.Owin;
-using SampleLTE.Api.Controllers;
-using SampleLTE.Web;
+using Afex.WarehouseMan.Api.Controllers;
+using Afex.WarehouseMan.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
@@ -13,7 +13,7 @@ using Owin;
 
 [assembly: OwinStartup(typeof(Startup))]
 
-namespace SampleLTE.Web
+namespace Afex.WarehouseMan.Web
 {
     public class Startup
     {

@@ -1,10 +1,10 @@
 ﻿using Abp.Application.Features;
 using Abp.Domain.Repositories;
 using Abp.MultiTenancy;
-using SampleLTE.Editions;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Editions;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.MultiTenancy
+namespace Afex.WarehouseMan.MultiTenancy
 {
     public class TenantManager : AbpTenantManager<Tenant, User>
     {

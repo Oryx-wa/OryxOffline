@@ -1,8 +1,8 @@
 using System.Linq;
-using SampleLTE.EntityFramework;
-using SampleLTE.MultiTenancy;
+using Afex.WarehouseMan.EntityFramework;
+using Afex.WarehouseMan.MultiTenancy;
 
-namespace SampleLTE.Migrations.SeedData
+namespace Afex.WarehouseMan.Migrations.SeedData
 {
     public class DefaultTenantCreator
     {

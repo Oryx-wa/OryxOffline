@@ -1,9 +1,9 @@
 using Abp.Authorization.Users;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
-using SampleLTE.Authorization.Roles;
+using Afex.WarehouseMan.Authorization.Roles;
 
-namespace SampleLTE.Users
+namespace Afex.WarehouseMan.Users
 {
     public class UserStore : AbpUserStore<Role, User>
     {

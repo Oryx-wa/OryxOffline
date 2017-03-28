@@ -5,7 +5,7 @@ using Abp.Configuration.Startup;
 using Abp.Modules;
 using Abp.WebApi;
 
-namespace SampleLTE.Api
+namespace Afex.WarehouseMan.Api
 {
     [DependsOn(typeof(AbpWebApiModule), typeof(SampleLTEApplicationModule))]
     public class SampleLTEWebApiModule : AbpModule

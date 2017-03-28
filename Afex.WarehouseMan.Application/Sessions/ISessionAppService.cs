@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services;
-using SampleLTE.Sessions.Dto;
+using Afex.WarehouseMan.Sessions.Dto;
 
-namespace SampleLTE.Sessions
+namespace Afex.WarehouseMan.Sessions
 {
     public interface ISessionAppService : IApplicationService
     {

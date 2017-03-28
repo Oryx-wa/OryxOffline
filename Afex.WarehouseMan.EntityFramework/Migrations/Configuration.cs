@@ -1,12 +1,12 @@
 using System.Data.Entity.Migrations;
 using Abp.MultiTenancy;
 using Abp.Zero.EntityFramework;
-using SampleLTE.Migrations.SeedData;
+using Afex.WarehouseMan.Migrations.SeedData;
 using EntityFramework.DynamicFilters;
 
-namespace SampleLTE.Migrations
+namespace Afex.WarehouseMan.Migrations
 {
-    public sealed class Configuration : DbMigrationsConfiguration<SampleLTE.EntityFramework.SampleLTEDbContext>, IMultiTenantSeed
+    public sealed class Configuration : DbMigrationsConfiguration<Afex.WarehouseMan.EntityFramework.SampleLTEDbContext>, IMultiTenantSeed
     {
         public AbpTenantBase Tenant { get; set; }
 
@@ -16,7 +16,7 @@ namespace SampleLTE.Migrations
             ContextKey = "SampleLTE";
         }
 
-        protected override void Seed(SampleLTE.EntityFramework.SampleLTEDbContext context)
+        protected override void Seed(Afex.WarehouseMan.EntityFramework.SampleLTEDbContext context)
         {
             context.DisableAllFilters();
 

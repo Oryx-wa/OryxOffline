@@ -1,4 +1,4 @@
-﻿namespace SampleLTE.Authorization
+﻿namespace Afex.WarehouseMan.Authorization
 {
     public static class PermissionNames
     {

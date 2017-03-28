@@ -3,7 +3,7 @@ using Abp.Castle.Logging.Log4Net;
 using Abp.Web;
 using Castle.Facilities.Logging;
 
-namespace SampleLTE.Web
+namespace Afex.WarehouseMan.Web
 {
     public class MvcApplication : AbpWebApplication<SampleLTEWebModule>
     {

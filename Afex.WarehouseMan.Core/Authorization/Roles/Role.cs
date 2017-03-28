@@ -1,7 +1,7 @@
 ﻿using Abp.Authorization.Roles;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.Authorization.Roles
+namespace Afex.WarehouseMan.Authorization.Roles
 {
     public class Role : AbpRole<User>
     {

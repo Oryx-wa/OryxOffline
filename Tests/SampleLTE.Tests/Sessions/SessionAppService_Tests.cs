@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using SampleLTE.Sessions;
+using Afex.WarehouseMan.Sessions;
 using Shouldly;
 using Xunit;
 
-namespace SampleLTE.Tests.Sessions
+namespace Afex.WarehouseMan.Tests.Sessions
 {
     public class SessionAppService_Tests : SampleLTETestBase
     {

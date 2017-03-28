@@ -6,11 +6,11 @@ using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Zero.Configuration;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.Authorization
+namespace Afex.WarehouseMan.Authorization
 {
     public class LogInManager : AbpLogInManager<Tenant, Role, User>
     {

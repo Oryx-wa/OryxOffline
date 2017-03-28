@@ -5,7 +5,7 @@ using Abp.Collections.Extensions;
 using Abp.Dependency;
 using Castle.Facilities.Logging;
 
-namespace SampleLTE.Migrator
+namespace Afex.WarehouseMan.Migrator
 {
     public class Program
     {

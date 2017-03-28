@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using Abp.Application.Editions;
-using SampleLTE.Editions;
-using SampleLTE.EntityFramework;
+using Afex.WarehouseMan.Editions;
+using Afex.WarehouseMan.EntityFramework;
 
-namespace SampleLTE.Migrations.SeedData
+namespace Afex.WarehouseMan.Migrations.SeedData
 {
     public class DefaultEditionsCreator
     {

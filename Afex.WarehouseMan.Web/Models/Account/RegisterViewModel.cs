@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.Web.Models.Account
+namespace Afex.WarehouseMan.Web.Models.Account
 {
     public class RegisterViewModel : IValidatableObject
     {

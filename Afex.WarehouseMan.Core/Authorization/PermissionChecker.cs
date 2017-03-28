@@ -1,9 +1,9 @@
 ﻿using Abp.Authorization;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.Authorization
+namespace Afex.WarehouseMan.Authorization
 {
     public class PermissionChecker : PermissionChecker<Tenant, Role, User>
     {

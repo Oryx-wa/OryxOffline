@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Abp.Localization;
-using SampleLTE.EntityFramework;
+using Afex.WarehouseMan.EntityFramework;
 
-namespace SampleLTE.Migrations.SeedData
+namespace Afex.WarehouseMan.Migrations.SeedData
 {
     public class DefaultLanguagesCreator
     {

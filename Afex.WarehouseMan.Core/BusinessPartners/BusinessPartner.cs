@@ -1,7 +1,7 @@
 ﻿using Abp.Domain.Entities.Auditing;
-using SampleLTE.AccountPayables;
-using SampleLTE.AccountReceivables;
-using SampleLTE.Common;
+using Afex.WarehouseMan.AccountPayables;
+using Afex.WarehouseMan.AccountReceivables;
+using Afex.WarehouseMan.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SampleLTE.BusinessPartners
+namespace Afex.WarehouseMan.BusinessPartners
 {
     public class BusinessPartner : CreationAuditedEntity
     {

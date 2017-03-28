@@ -3,7 +3,7 @@ using Abp.UI;
 using Abp.Web.Mvc.Controllers;
 using Microsoft.AspNet.Identity;
 
-namespace SampleLTE.Web.Controllers
+namespace Afex.WarehouseMan.Web.Controllers
 {
     /// <summary>
     /// Derive all Controllers from this class.

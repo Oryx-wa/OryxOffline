@@ -3,7 +3,7 @@ using Abp.Authorization.Users;
 using Abp.AutoMapper;
 using Abp.MultiTenancy;
 
-namespace SampleLTE.MultiTenancy.Dto
+namespace Afex.WarehouseMan.MultiTenancy.Dto
 {
     [AutoMapTo(typeof(Tenant))]
     public class CreateTenantInput

@@ -2,7 +2,7 @@
 using Abp.EntityFramework;
 using Abp.EntityFramework.Repositories;
 
-namespace SampleLTE.EntityFramework.Repositories
+namespace Afex.WarehouseMan.EntityFramework.Repositories
 {
     public abstract class SampleLTERepositoryBase<TEntity, TPrimaryKey> : EfRepositoryBase<SampleLTEDbContext, TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>

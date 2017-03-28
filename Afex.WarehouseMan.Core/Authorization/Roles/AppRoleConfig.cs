@@ -1,7 +1,7 @@
 ﻿using Abp.MultiTenancy;
 using Abp.Zero.Configuration;
 
-namespace SampleLTE.Authorization.Roles
+namespace Afex.WarehouseMan.Authorization.Roles
 {
     public static class AppRoleConfig
     {

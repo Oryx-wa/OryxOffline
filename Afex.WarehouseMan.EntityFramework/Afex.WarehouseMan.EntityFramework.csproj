@@ -213,7 +213,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SampleLTE.Core\Afex.WarehouseMan.Core.csproj">
+    <ProjectReference Include="..\Afex.WarehouseMan.Core\Afex.WarehouseMan.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>Afex.WarehouseMan.Core</Name>
     </ProjectReference>
