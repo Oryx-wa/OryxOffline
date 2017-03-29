@@ -102,6 +102,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountPayables\Dto\CreatePurchaseOrderInput.cs" />
+    <Compile Include="AccountPayables\Dto\PurchaseOrderDto.cs" />
+    <Compile Include="AccountPayables\Dto\PurchaseOrderLineDto.cs" />
+    <Compile Include="AccountPayables\Dto\PurchaseOrderListInput.cs" />
+    <Compile Include="AccountPayables\Dto\UpdatePurchaseOrderInput.cs" />
+    <Compile Include="AccountReceivables\CreditMemoLines\Dto\CreditMemoLineDto.cs" />
+    <Compile Include="AccountReceivables\CreditMemos\Dto\CreateCreditMemoInput.cs" />
+    <Compile Include="AccountReceivables\CreditMemos\Dto\CreditMemoDto.cs" />
+    <Compile Include="AccountReceivables\CreditMemos\Dto\CreditMemoListInput.cs" />
+    <Compile Include="AccountReceivables\CreditMemos\Dto\UpdateCreditMemoInput.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\Dto\CreateGoodsReceiptInput.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptDto.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptLineDto.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptListInput.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\Dto\UpdateGoodsReceiptInput.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\Dto\CreateSalesInvoiceInput.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\Dto\SalesInvoiceDto.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\Dto\SalesInvoiceLineDto.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\Dto\SalesInvoiceListInput.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\Dto\UpdateSalesInvoiceInput.cs" />
+    <Compile Include="BusinessPartners\Dto\BusinessPartnerDto.cs" />
+    <Compile Include="BusinessPartners\Dto\BusinessPartnerListInput.cs" />
+    <Compile Include="BusinessPartners\Dto\CreateBusinessPartnerInput.cs" />
+    <Compile Include="BusinessPartners\Dto\UpdateBusinessPartnerInput.cs" />
+    <Compile Include="Items\Dto\CreateItemInput.cs" />
+    <Compile Include="Items\Dto\ItemDto.cs" />
+    <Compile Include="Items\Dto\ItemListInput.cs" />
+    <Compile Include="Items\Dto\UpdateItemInput.cs" />
+    <Compile Include="Items\Groups\Dto\CreateItemGroupInput.cs" />
+    <Compile Include="Items\Groups\Dto\ItemGroupDto.cs" />
+    <Compile Include="Items\Groups\Dto\ItemGroupListInput.cs" />
+    <Compile Include="Items\Groups\Dto\UpdateItemGroupInput.cs" />
     <Compile Include="SampleLTEApplicationModule.cs" />
     <Compile Include="SampleLTEAppServiceBase.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />
@@ -135,6 +167,7 @@
       <Name>Afex.WarehouseMan.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
