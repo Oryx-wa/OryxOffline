@@ -3,9 +3,9 @@ using Abp.Authorization.Roles;
 using Abp.Domain.Uow;
 using Abp.Runtime.Caching;
 using Abp.Zero.Configuration;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.Authorization.Roles
+namespace Afex.WarehouseMan.Authorization.Roles
 {
     public class RoleManager : AbpRoleManager<Role, User>
     {

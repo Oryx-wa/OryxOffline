@@ -3,7 +3,7 @@ using Abp.Dependency;
 using Abp.Timing;
 using Castle.Core.Logging;
 
-namespace SampleLTE.Migrator
+namespace Afex.WarehouseMan.Migrator
 {
     public class Log : ITransientDependency
     {

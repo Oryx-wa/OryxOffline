@@ -1,11 +1,11 @@
 ﻿using System.Data.Entity;
 using System.Threading.Tasks;
-using SampleLTE.Users;
-using SampleLTE.Users.Dto;
+using Afex.WarehouseMan.Users;
+using Afex.WarehouseMan.Users.Dto;
 using Shouldly;
 using Xunit;
 
-namespace SampleLTE.Tests.Users
+namespace Afex.WarehouseMan.Tests.Users
 {
     public class UserAppService_Tests : SampleLTETestBase
     {

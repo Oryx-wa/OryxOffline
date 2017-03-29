@@ -1,4 +1,4 @@
-﻿namespace SampleLTE.Sessions.Dto
+﻿namespace Afex.WarehouseMan.Sessions.Dto
 {
     public class GetCurrentLoginInformationsOutput
     {

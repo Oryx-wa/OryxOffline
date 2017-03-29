@@ -1,4 +1,4 @@
-﻿namespace SampleLTE
+﻿namespace Afex.WarehouseMan
 {
     public class SampleLTEConsts
     {

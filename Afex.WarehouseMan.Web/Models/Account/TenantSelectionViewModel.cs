@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Abp.AutoMapper;
-using SampleLTE.MultiTenancy;
+using Afex.WarehouseMan.MultiTenancy;
 
-namespace SampleLTE.Web.Models.Account
+namespace Afex.WarehouseMan.Web.Models.Account
 {
     public class TenantSelectionViewModel
     {

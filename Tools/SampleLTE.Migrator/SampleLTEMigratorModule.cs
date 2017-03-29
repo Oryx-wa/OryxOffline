@@ -1,9 +1,9 @@
 using System.Data.Entity;
 using System.Reflection;
 using Abp.Modules;
-using SampleLTE.EntityFramework;
+using Afex.WarehouseMan.EntityFramework;
 
-namespace SampleLTE.Migrator
+namespace Afex.WarehouseMan.Migrator
 {
     [DependsOn(typeof(SampleLTEDataModule))]
     public class SampleLTEMigratorModule : AbpModule

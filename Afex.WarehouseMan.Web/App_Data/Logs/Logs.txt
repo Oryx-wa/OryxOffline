@@ -3447,3 +3447,896 @@ DEBUG 2017-03-25 09:27:13,423 [6    ] Abp.Modules.AbpModuleManager             -
 DEBUG 2017-03-25 09:27:13,423 [6    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2017-03-25 09:27:13,423 [6    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2017-03-25 09:27:13,423 [6    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 11:28:08,881 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 11:28:09,104 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 11:28:09,116 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,127 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,127 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:28:09,135 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 11:28:14,677 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:28:14,677 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:28:14,677 [1    ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:28:14,677 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:28:17,265 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:29:05,882 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 11:29:05,977 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 11:29:05,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 11:29:05,982 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 11:29:05,985 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 11:29:06,123 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 11:29:07,055 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 11:29:07,055 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 11:29:07,062 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 11:29:07,063 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 11:29:07,063 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 11:29:07,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 11:29:07,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 11:29:07,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 11:29:14,435 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 11:29:14,437 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 11:29:14,440 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 11:29:14,442 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-03-28 11:30:52,518 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+ERROR 2017-03-28 11:32:11,898 [7    ] useMan.Web.Controllers.AccountController - c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.pp8pnf0g.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.pp8pnf0g.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-03-28 11:38:33,609 [31   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 11:38:33,660 [31   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 11:38:33,662 [31   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 11:38:33,662 [31   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 11:45:44,513 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 11:45:50,813 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 11:45:50,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,834 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,840 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:45:50,850 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 11:46:30,718 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:46:30,719 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:46:30,719 [1    ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:46:30,719 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 11:46:34,482 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 11:46:38,411 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 11:46:38,586 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 11:46:38,590 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 11:46:38,590 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 11:46:38,593 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 11:46:38,744 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 11:46:39,073 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 11:46:39,073 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 11:46:39,087 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 11:46:39,087 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 11:46:39,088 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 11:46:39,088 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 11:46:39,089 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 11:46:39,089 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 11:46:42,358 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 11:46:42,362 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 11:46:42,365 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 11:46:42,369 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-03-28 11:47:48,462 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+ERROR 2017-03-28 11:49:07,535 [11   ] useMan.Web.Controllers.AccountController - c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.eas938sf.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.eas938sf.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-03-28 12:35:55,386 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 12:35:55,417 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 12:35:55,429 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,433 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,434 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,435 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,436 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,437 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,438 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:35:55,445 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 12:35:56,131 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:35:56,131 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:35:56,132 [1    ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:35:56,132 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:35:56,925 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:36:00,266 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 12:36:00,291 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 12:36:00,296 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 12:36:00,297 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 12:36:00,300 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 12:36:00,442 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:36:00,594 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 12:36:00,595 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 12:36:00,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 12:36:00,601 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 12:36:00,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 12:36:00,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 12:36:00,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 12:36:00,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 12:36:03,363 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 12:36:03,367 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 12:36:03,369 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 12:36:03,372 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-03-28 12:36:09,927 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+ERROR 2017-03-28 12:36:14,861 [5    ] useMan.Web.Controllers.AccountController - c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.qho44wei.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.qho44wei.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-03-28 12:42:04,246 [50   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 12:42:04,256 [50   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:42:04,256 [50   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:42:04,256 [50   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 12:44:45,586 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 12:44:45,617 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 12:44:45,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:45,645 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 12:44:45,911 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:44:45,911 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:44:45,911 [1    ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:44:45,911 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:44:46,668 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:44:48,686 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 12:44:48,699 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 12:44:48,704 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 12:44:48,704 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 12:44:48,706 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 12:44:48,836 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:44:48,969 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 12:44:48,969 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 12:44:48,975 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 12:44:48,975 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 12:44:48,976 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 12:44:48,976 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 12:44:48,977 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 12:44:48,977 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 12:44:51,389 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 12:44:51,392 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 12:44:51,395 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 12:44:51,397 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-03-28 12:44:55,919 [7    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+ERROR 2017-03-28 12:44:59,872 [8    ] useMan.Web.Controllers.AccountController - c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.1kjifwls.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.1kjifwls.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-03-28 12:48:14,694 [27   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 12:48:14,694 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:48:14,694 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:48:14,694 [27   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 12:50:19,767 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 12:50:19,797 [24   ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,807 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:19,817 [24   ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 12:50:20,197 [24   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:50:20,197 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:50:20,197 [24   ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:50:20,197 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 12:50:20,967 [24   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 12:50:23,427 [24   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 12:50:23,437 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 12:50:23,447 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 12:50:23,447 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 12:50:23,447 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 12:50:23,557 [24   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 12:50:23,637 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 12:50:23,637 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 12:50:23,637 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 12:50:23,637 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 12:50:23,647 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 12:50:23,647 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 12:50:23,647 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 12:50:23,647 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 12:50:25,487 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 12:50:25,487 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 12:50:25,487 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 12:50:25,487 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-03-28 12:50:32,784 [33   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+ERROR 2017-03-28 12:50:36,964 [21   ] useMan.Web.Controllers.AccountController - c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.ywllhkng.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_login.cshtml.5f83eb8c.ywllhkng.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-03-28 13:00:40,627 [48   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 13:00:40,627 [48   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:00:40,627 [48   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:00:40,627 [48   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 13:02:22,158 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 13:02:22,188 [24   ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 13:02:22,200 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,204 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,204 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,205 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,205 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,206 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,206 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,206 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,207 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,207 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,208 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,208 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,208 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,208 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,209 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:22,215 [24   ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 13:02:22,631 [24   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:02:22,632 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:02:22,632 [24   ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:02:22,632 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:02:23,415 [24   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:02:25,917 [24   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 13:02:25,928 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 13:02:25,932 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 13:02:25,932 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 13:02:25,934 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 13:02:26,064 [24   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:02:26,160 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 13:02:26,160 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 13:02:26,167 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 13:02:26,167 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 13:02:26,168 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 13:02:26,168 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 13:02:26,168 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 13:02:26,169 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 13:02:28,791 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 13:02:28,795 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 13:02:28,798 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 13:02:28,801 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-03-28 13:02:37,860 [42   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+ERROR 2017-03-28 13:02:42,843 [8    ] useMan.Web.Controllers.AccountController - c:\Users\Administrator\Documents\GitHub\OryxOffline\Afex.WarehouseMan.Web\Views\Account\Login.cshtml(24): error CS0234: The type or namespace name 'MultiTenancy' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Users\Administrator\Documents\GitHub\OryxOffline\Afex.WarehouseMan.Web\Views\Account\Login.cshtml(24): error CS0234: The type or namespace name 'MultiTenancy' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2017-03-28 13:18:03,295 [41   ] useMan.Web.Controllers.AccountController - c:\Users\Administrator\Documents\GitHub\OryxOffline\Afex.WarehouseMan.Web\Views\Account\Login.cshtml(24): error CS0234: The type or namespace name 'MultiTenancy' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Users\Administrator\Documents\GitHub\OryxOffline\Afex.WarehouseMan.Web\Views\Account\Login.cshtml(24): error CS0234: The type or namespace name 'MultiTenancy' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2017-03-28 13:18:34,741 [29   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext() in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 67
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo) in D:\Halil\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelperExtensions.cs:line 27
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext) in D:\Halil\Github\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Authorization\AbpMvcAuthorizeFilter.cs:line 48
+WARN  2017-03-28 13:18:38,195 [31   ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:38,207 [31   ] Abp.Logging.LogHelper                    - Can not find 'UserNameOrEmail' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:38,208 [31   ] Abp.Logging.LogHelper                    - Can not find 'Password' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:38,210 [31   ] Abp.Logging.LogHelper                    - Can not find 'RememberMe' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:38,211 [31   ] Abp.Logging.LogHelper                    - Can not find 'LogIn' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:38,212 [31   ] Abp.Logging.LogHelper                    - Can not find 'Register' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:42,182 [41   ] Abp.Logging.LogHelper                    - Can not find 'HomePage' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:18:42,183 [41   ] Abp.Logging.LogHelper                    - Can not find 'About' in localization source 'SampleLTE'!
+ERROR 2017-03-28 13:21:30,533 [29   ] ehouseMan.Web.Controllers.HomeController - c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_layout.cshtml.52d8c75d.2cop-trq.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\0c43f9fd\6fb8712b\App_Web_layout.cshtml.52d8c75d.2cop-trq.0.cs(27): error CS0234: The type or namespace name 'Web' does not exist in the namespace 'SampleLTE' (are you missing an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2017-03-28 13:23:43,685 [40   ] Abp.Logging.LogHelper                    - Can not find 'HomePage' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:43,701 [40   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:43,703 [40   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:43,706 [40   ] Abp.Logging.LogHelper                    - Can not find 'SalesInvoices' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:43,707 [40   ] Abp.Logging.LogHelper                    - Can not find 'Customers' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:43,708 [40   ] Abp.Logging.LogHelper                    - Can not find 'About' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:45,345 [45   ] Abp.Logging.LogHelper                    - Can not find 'Logout' in localization source 'SampleLTE'!
+WARN  2017-03-28 13:23:47,103 [45   ] Abp.Logging.LogHelper                    - Can not find 'WellcomeMessage' in localization source 'SampleLTE'!
+DEBUG 2017-03-28 13:23:47,542 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a2c7858b-cd61-4f3c-b634-238f85f38ef0","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:23:47.5182209+01:00","Properties":{}}
+DEBUG 2017-03-28 13:23:47,702 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a2c7858b-cd61-4f3c-b634-238f85f38ef0
+DEBUG 2017-03-28 13:30:17,344 [42   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 13:30:17,346 [42   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:30:17,347 [42   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:30:17,347 [42   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 13:31:02,744 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 13:31:02,774 [24   ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 13:31:02,784 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,794 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:02,804 [24   ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 13:31:03,054 [24   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:31:03,054 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:31:03,054 [24   ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:31:03,054 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:31:03,784 [24   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:31:05,784 [24   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 13:31:05,794 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 13:31:05,804 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 13:31:05,834 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 13:31:05,834 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 13:31:05,974 [24   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 13:31:06,064 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 13:31:08,484 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 13:31:08,484 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 13:31:08,494 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 13:31:08,494 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-03-28 13:31:09,284 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"a2c7858b-cd61-4f3c-b634-238f85f38ef0","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:31:09.2247944+01:00","Properties":{}}
+DEBUG 2017-03-28 13:31:09,304 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a2c7858b-cd61-4f3c-b634-238f85f38ef0
+DEBUG 2017-03-28 13:31:14,651 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2eab73c9-a048-4838-8a2e-c1a686c545f2","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:31:14.6518074+01:00","Properties":{}}
+DEBUG 2017-03-28 13:31:25,037 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2eab73c9-a048-4838-8a2e-c1a686c545f2
+DEBUG 2017-03-28 13:31:33,917 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f2a387d3-9b7a-4392-afb2-a7c0f9529f55","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:31:33.9163317+01:00","Properties":{}}
+DEBUG 2017-03-28 13:31:34,021 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f2a387d3-9b7a-4392-afb2-a7c0f9529f55
+DEBUG 2017-03-28 13:32:18,661 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f2a387d3-9b7a-4392-afb2-a7c0f9529f55
+DEBUG 2017-03-28 13:32:55,355 [28   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 13:32:55,357 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:32:55,359 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:32:55,359 [28   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 13:33:46,203 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 13:33:46,234 [24   ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 13:33:46,246 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,250 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,251 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,251 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,251 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,252 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,253 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,253 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,253 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,254 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,254 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,254 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,255 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,255 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,255 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:46,263 [24   ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 13:33:46,683 [24   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:33:46,683 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:33:46,683 [24   ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:33:46,683 [24   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 13:33:47,533 [24   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 13:33:49,971 [24   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 13:33:49,985 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 13:33:49,988 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 13:33:49,992 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 13:33:49,995 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 13:33:50,122 [24   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 13:33:50,210 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 13:33:50,211 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 13:33:50,217 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 13:33:50,217 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 13:33:50,218 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 13:33:50,218 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 13:33:50,218 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 13:33:50,218 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 13:33:52,834 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 13:33:52,837 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 13:33:52,841 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 13:33:52,844 [24   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-03-28 13:34:49,956 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:34:49.9385436+01:00","Properties":{}}
+DEBUG 2017-03-28 13:34:50,112 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f9a25730-6ca0-4cab-86d9-43b6bd3fddce
+DEBUG 2017-03-28 13:46:32,286 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:34:49.9385436+01:00","Properties":{}}
+DEBUG 2017-03-28 13:46:50,687 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T13:34:49.9385436+01:00","Properties":{}}
+DEBUG 2017-03-28 14:25:24,640 [16   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-28 14:25:24,650 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 14:25:24,650 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 14:25:24,650 [16   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-28 14:25:34,905 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-28 14:25:40,512 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-28 14:25:40,522 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,532 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,542 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:40,542 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-28 14:25:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 14:25:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 14:25:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 14:25:44,299 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-28 14:25:46,959 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-28 14:25:48,970 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-28 14:25:48,990 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-28 14:25:48,990 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-28 14:25:48,990 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-28 14:25:49,000 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-28 14:25:49,120 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-28 14:25:49,220 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-28 14:25:49,220 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-28 14:25:49,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-28 14:25:49,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-28 14:25:49,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-28 14:25:49,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-28 14:25:49,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-28 14:25:49,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-28 14:25:51,933 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-28 14:25:51,933 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-28 14:25:51,933 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-28 14:25:51,933 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-03-28 14:26:06,759 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
+DEBUG 2017-03-28 14:26:06,759 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
+DEBUG 2017-03-28 14:26:06,759 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
+DEBUG 2017-03-28 14:26:06,769 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
+DEBUG 2017-03-28 14:26:06,819 [51   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
+DEBUG 2017-03-28 14:26:06,819 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
+DEBUG 2017-03-28 14:26:07,009 [95   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4e24f2e4-1e94-445c-8480-80712eec6c6d","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:07.0098396+01:00","Properties":{}}

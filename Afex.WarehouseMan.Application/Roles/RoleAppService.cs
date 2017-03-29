@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Authorization;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.Roles.Dto;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.Roles.Dto;
 
-namespace SampleLTE.Roles
+namespace Afex.WarehouseMan.Roles
 {
     /* THIS IS JUST A SAMPLE. */
     public class RoleAppService : SampleLTEAppServiceBase,IRoleAppService

@@ -8,8 +8,8 @@
     <ProjectGuid>{C602C47E-F379-40A3-A146-4F19105B3491}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleLTE.Tests</RootNamespace>
-    <AssemblyName>SampleLTE.Tests</AssemblyName>
+    <RootNamespace>Afex.WarehouseMan.Tests</RootNamespace>
+    <AssemblyName>Afex.WarehouseMan.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -177,21 +177,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SampleLTE.Application\Afex.WarehouseMan.Application.csproj">
-      <Project>{EDF5D964-4C0F-4F19-B674-58A38A5E5401}</Project>
-      <Name>Afex.WarehouseMan.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SampleLTE.Core\Afex.WarehouseMan.Core.csproj">
-      <Project>{17298EA0-AF73-4F30-B6F1-2066100D7D74}</Project>
-      <Name>Afex.WarehouseMan.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SampleLTE.EntityFramework\Afex.WarehouseMan.EntityFramework.csproj">
-      <Project>{3979F157-DEB0-4878-AB1D-4CEF6B5A1300}</Project>
-      <Name>Afex.WarehouseMan.EntityFramework</Name>
-    </ProjectReference>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+    <ProjectReference Include="..\..\Afex.WarehouseMan.Application\Afex.WarehouseMan.Application.csproj">
+      <Project>{edf5d964-4c0f-4f19-b674-58a38a5e5401}</Project>
+      <Name>Afex.WarehouseMan.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Afex.WarehouseMan.Core\Afex.WarehouseMan.Core.csproj">
+      <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
+      <Name>Afex.WarehouseMan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Afex.WarehouseMan.EntityFramework\Afex.WarehouseMan.EntityFramework.csproj">
+      <Project>{3979f157-deb0-4878-ab1d-4cef6b5a1300}</Project>
+      <Name>Afex.WarehouseMan.EntityFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

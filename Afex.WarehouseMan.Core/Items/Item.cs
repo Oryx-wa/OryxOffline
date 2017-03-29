@@ -1,13 +1,13 @@
 ﻿using Abp.Domain.Entities.Auditing;
-using SampleLTE.AccountPayables;
-using SampleLTE.AccountReceivables;
+using Afex.WarehouseMan.AccountReceivables;
+using Afex.WarehouseMan.AccountPayables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SampleLTE.Items
+namespace Afex.WarehouseMan.Items
 {
     public class Item : CreationAuditedEntity
     {

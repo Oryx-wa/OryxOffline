@@ -7,13 +7,13 @@ using Abp.AutoMapper;
 using Abp.Extensions;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
-using SampleLTE.Authorization;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.Editions;
-using SampleLTE.MultiTenancy.Dto;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Authorization;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.Editions;
+using Afex.WarehouseMan.MultiTenancy.Dto;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.MultiTenancy
+namespace Afex.WarehouseMan.MultiTenancy
 {
     [AbpAuthorize(PermissionNames.Pages_Tenants)]
     public class TenantAppService : SampleLTEAppServiceBase, ITenantAppService

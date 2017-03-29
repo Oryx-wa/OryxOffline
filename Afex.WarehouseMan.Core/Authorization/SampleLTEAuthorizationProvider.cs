@@ -2,7 +2,7 @@
 using Abp.Localization;
 using Abp.MultiTenancy;
 
-namespace SampleLTE.Authorization
+namespace Afex.WarehouseMan.Authorization
 {
     public class SampleLTEAuthorizationProvider : AuthorizationProvider
     {

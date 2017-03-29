@@ -3,13 +3,13 @@ using Abp.Authorization;
 using Abp.Authorization.Roles;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
-using SampleLTE.Authorization;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.EntityFramework;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Authorization;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.EntityFramework;
+using Afex.WarehouseMan.Users;
 using Microsoft.AspNet.Identity;
 
-namespace SampleLTE.Migrations.SeedData
+namespace Afex.WarehouseMan.Migrations.SeedData
 {
     public class HostRoleAndUserCreator
     {

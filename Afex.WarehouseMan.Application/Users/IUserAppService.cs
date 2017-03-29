@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using SampleLTE.Users.Dto;
+using Afex.WarehouseMan.Users.Dto;
 
-namespace SampleLTE.Users
+namespace Afex.WarehouseMan.Users
 {
     public interface IUserAppService : IApplicationService
     {

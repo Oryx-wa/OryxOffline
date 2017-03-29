@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using SampleLTE.Roles.Dto;
+using Afex.WarehouseMan.Roles.Dto;
 
-namespace SampleLTE.Roles
+namespace Afex.WarehouseMan.Roles
 {
     public interface IRoleAppService : IApplicationService
     {

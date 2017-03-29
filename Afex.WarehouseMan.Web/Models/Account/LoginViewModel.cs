@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 
-namespace SampleLTE.Web.Models.Account
+namespace Afex.WarehouseMan.Web.Models.Account
 {
     public class LoginViewModel
     {

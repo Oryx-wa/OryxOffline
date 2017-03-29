@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace SampleLTE.Users.Dto
+namespace Afex.WarehouseMan.Users.Dto
 {
     public class ProhibitPermissionInput
     {

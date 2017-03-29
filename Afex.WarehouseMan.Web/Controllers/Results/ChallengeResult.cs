@@ -2,7 +2,7 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.Owin.Security;
 
-namespace SampleLTE.Web.Controllers.Results
+namespace Afex.WarehouseMan.Web.Controllers.Results
 {
     public class ChallengeResult : HttpUnauthorizedResult
     {

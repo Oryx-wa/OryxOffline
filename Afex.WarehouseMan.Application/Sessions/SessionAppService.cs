@@ -2,9 +2,9 @@
 using Abp.Auditing;
 using Abp.Authorization;
 using Abp.AutoMapper;
-using SampleLTE.Sessions.Dto;
+using Afex.WarehouseMan.Sessions.Dto;
 
-namespace SampleLTE.Sessions
+namespace Afex.WarehouseMan.Sessions
 {
     [AbpAuthorize]
     public class SessionAppService : SampleLTEAppServiceBase, ISessionAppService

@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.Sessions.Dto
+namespace Afex.WarehouseMan.Sessions.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class UserLoginInfoDto : EntityDto<long>

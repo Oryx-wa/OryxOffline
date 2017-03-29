@@ -2,7 +2,7 @@ using System;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 
-namespace SampleLTE.Users.Dto
+namespace Afex.WarehouseMan.Users.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class UserListDto : EntityDto<long>

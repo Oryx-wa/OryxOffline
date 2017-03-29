@@ -1,4 +1,4 @@
-namespace SampleLTE.Authorization.Roles
+namespace Afex.WarehouseMan.Authorization.Roles
 {
     public static class StaticRoleNames
     {

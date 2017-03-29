@@ -7,9 +7,9 @@ using Abp.Domain.Uow;
 using Abp.Extensions;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
-using SampleLTE.MultiTenancy;
+using Afex.WarehouseMan.MultiTenancy;
 
-namespace SampleLTE.Migrator
+namespace Afex.WarehouseMan.Migrator
 {
     public class MultiTenantMigrateExecuter : ITransientDependency
     {

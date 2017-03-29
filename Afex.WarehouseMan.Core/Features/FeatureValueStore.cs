@@ -3,8 +3,8 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.MultiTenancy;
 using Abp.Runtime.Caching;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 
 namespace SampleLTE.Features
 {

@@ -4,11 +4,11 @@ using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
-using SampleLTE.Authorization;
-using SampleLTE.Users.Dto;
+using Afex.WarehouseMan.Authorization;
+using Afex.WarehouseMan.Users.Dto;
 using Microsoft.AspNet.Identity;
 
-namespace SampleLTE.Users
+namespace Afex.WarehouseMan.Users
 {
     /* THIS IS JUST A SAMPLE. */
     [AbpAuthorize(PermissionNames.Pages_Users)]

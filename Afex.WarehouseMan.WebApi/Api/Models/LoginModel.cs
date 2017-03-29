@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SampleLTE.Api.Models
+namespace Afex.WarehouseMan.Api.Models
 {
     public class LoginModel
     {

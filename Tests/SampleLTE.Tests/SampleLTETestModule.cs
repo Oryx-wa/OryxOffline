@@ -5,7 +5,7 @@ using Abp.Zero.Configuration;
 using Castle.MicroKernel.Registration;
 using NSubstitute;
 
-namespace SampleLTE.Tests
+namespace Afex.WarehouseMan.Tests
 {
     [DependsOn(
         typeof(SampleLTEApplicationModule),

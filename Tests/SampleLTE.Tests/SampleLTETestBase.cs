@@ -9,15 +9,15 @@ using Abp.Configuration.Startup;
 using Abp.Domain.Uow;
 using Abp.Runtime.Session;
 using Abp.TestBase;
-using SampleLTE.EntityFramework;
-using SampleLTE.Migrations.SeedData;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.EntityFramework;
+using Afex.WarehouseMan.Migrations.SeedData;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 using Castle.MicroKernel.Registration;
 using Effort;
 using EntityFramework.DynamicFilters;
 
-namespace SampleLTE.Tests
+namespace Afex.WarehouseMan.Tests
 {
     public abstract class SampleLTETestBase : AbpIntegratedTestBase<SampleLTETestModule>
     {

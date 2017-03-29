@@ -7,9 +7,9 @@ using Abp.IdentityFramework;
 using Abp.Localization;
 using Abp.Organizations;
 using Abp.Runtime.Caching;
-using SampleLTE.Authorization.Roles;
+using Afex.WarehouseMan.Authorization.Roles;
 
-namespace SampleLTE.Users
+namespace Afex.WarehouseMan.Users
 {
     public class UserManager : AbpUserManager<Role, User>
     {

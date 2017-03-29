@@ -5,15 +5,15 @@ using Abp.Authorization.Users;
 using Abp.UI;
 using Abp.Web.Models;
 using Abp.WebApi.Controllers;
-using SampleLTE.Api.Models;
-using SampleLTE.Authorization;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Api.Models;
+using Afex.WarehouseMan.Authorization;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
 using Microsoft.Owin.Infrastructure;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;
 
-namespace SampleLTE.Api.Controllers
+namespace Afex.WarehouseMan.Api.Controllers
 {
     public class AccountController : AbpApiController
     {

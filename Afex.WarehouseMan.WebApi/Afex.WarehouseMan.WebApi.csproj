@@ -158,11 +158,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SampleLTE.Application\Afex.WarehouseMan.Application.csproj">
+    <ProjectReference Include="..\Afex.WarehouseMan.Application\Afex.WarehouseMan.Application.csproj">
       <Project>{edf5d964-4c0f-4f19-b674-58a38a5e5401}</Project>
       <Name>Afex.WarehouseMan.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SampleLTE.Core\Afex.WarehouseMan.Core.csproj">
+    <ProjectReference Include="..\Afex.WarehouseMan.Core\Afex.WarehouseMan.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>Afex.WarehouseMan.Core</Name>
     </ProjectReference>

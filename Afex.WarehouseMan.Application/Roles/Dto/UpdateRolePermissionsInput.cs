@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SampleLTE.Roles.Dto
+namespace Afex.WarehouseMan.Roles.Dto
 {
     public class UpdateRolePermissionsInput
     {

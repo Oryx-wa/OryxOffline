@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace SampleLTE.Web
+namespace Afex.WarehouseMan.Web
 {
     public static class BundleConfig
     {

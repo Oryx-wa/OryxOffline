@@ -1,7 +1,7 @@
 ﻿using Abp.MultiTenancy;
-using SampleLTE.Users;
+using Afex.WarehouseMan.Users;
 
-namespace SampleLTE.MultiTenancy
+namespace Afex.WarehouseMan.MultiTenancy
 {
     public class Tenant : AbpTenant<User>
     {

@@ -14,17 +14,17 @@ using Abp.Extensions;
 using Abp.Threading;
 using Abp.UI;
 using Abp.Web.Models;
-using SampleLTE.Authorization;
-using SampleLTE.Authorization.Roles;
-using SampleLTE.MultiTenancy;
-using SampleLTE.Users;
-using SampleLTE.Web.Controllers.Results;
-using SampleLTE.Web.Models.Account;
+using Afex.WarehouseMan.Authorization;
+using Afex.WarehouseMan.Authorization.Roles;
+using Afex.WarehouseMan.MultiTenancy;
+using Afex.WarehouseMan.Users;
+using Afex.WarehouseMan.Web.Controllers.Results;
+using Afex.WarehouseMan.Web.Models.Account;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 
-namespace SampleLTE.Web.Controllers
+namespace Afex.WarehouseMan.Web.Controllers
 {
     public class AccountController : SampleLTEControllerBase
     {

@@ -1,4 +1,4 @@
-namespace SampleLTE.Web.Models.Account
+namespace Afex.WarehouseMan.Web.Models.Account
 {
     public class RegisterResultViewModel
     {

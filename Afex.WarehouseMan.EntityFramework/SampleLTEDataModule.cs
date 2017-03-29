@@ -2,9 +2,9 @@
 using System.Reflection;
 using Abp.Modules;
 using Abp.Zero.EntityFramework;
-using SampleLTE.EntityFramework;
+using Afex.WarehouseMan.EntityFramework;
 
-namespace SampleLTE
+namespace Afex.WarehouseMan
 {
     [DependsOn(typeof(AbpZeroEntityFrameworkModule), typeof(SampleLTECoreModule))]
     public class SampleLTEDataModule : AbpModule

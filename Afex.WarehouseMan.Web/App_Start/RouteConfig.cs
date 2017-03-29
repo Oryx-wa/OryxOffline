@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace SampleLTE.Web
+namespace Afex.WarehouseMan.Web
 {
     public static class RouteConfig
     {

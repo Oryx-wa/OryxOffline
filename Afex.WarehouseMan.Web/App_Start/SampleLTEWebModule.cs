@@ -8,10 +8,10 @@ using Abp.Modules;
 using Abp.Web.Mvc;
 using Abp.Web.SignalR;
 using Abp.Zero.Configuration;
-using SampleLTE.Api;
+using Afex.WarehouseMan.Api;
 using Hangfire;
 
-namespace SampleLTE.Web
+namespace Afex.WarehouseMan.Web
 {
     [DependsOn(
         typeof(SampleLTEDataModule),
