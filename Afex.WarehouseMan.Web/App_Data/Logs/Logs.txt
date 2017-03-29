@@ -4340,3 +4340,166 @@ DEBUG 2017-03-28 14:26:06,769 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2017-03-28 14:26:06,819 [51   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
 DEBUG 2017-03-28 14:26:06,819 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"f9a25730-6ca0-4cab-86d9-43b6bd3fddce","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:06.6498391+01:00","Properties":{}}
 DEBUG 2017-03-28 14:26:07,009 [95   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4e24f2e4-1e94-445c-8480-80712eec6c6d","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-28T14:26:07.0098396+01:00","Properties":{}}
+DEBUG 2017-03-29 11:45:11,870 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-29 11:45:11,918 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-29 11:45:11,928 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,932 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,932 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,932 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,932 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,933 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,933 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,934 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,936 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:11,942 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-29 11:45:12,389 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 11:45:12,389 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 11:45:12,389 [1    ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 11:45:12,389 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 11:45:13,237 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 11:45:16,881 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-29 11:45:16,965 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-29 11:45:16,970 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-29 11:45:16,975 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-29 11:45:16,978 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-29 11:45:17,122 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 11:45:17,270 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-29 11:45:17,270 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-29 11:45:17,277 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-29 11:45:17,277 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-29 11:45:17,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-29 11:45:17,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-29 11:45:17,279 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-29 11:45:17,279 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-29 11:45:20,006 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-29 11:45:20,010 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-29 11:45:20,013 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-29 11:45:20,016 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-03-29 11:46:16,392 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"959560a7-da52-4e3d-a61d-550294bca9d6","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T11:46:16.3755487+01:00","Properties":{}}
+DEBUG 2017-03-29 11:46:16,552 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 959560a7-da52-4e3d-a61d-550294bca9d6
+DEBUG 2017-03-29 11:46:58,334 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 959560a7-da52-4e3d-a61d-550294bca9d6
+DEBUG 2017-03-29 11:47:13,881 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T11:47:13.8808378+01:00","Properties":{}}
+DEBUG 2017-03-29 11:47:13,944 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8
+DEBUG 2017-03-29 16:16:10,311 [20   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-29 16:16:11,121 [20   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 16:16:11,121 [20   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 16:16:11,121 [20   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-29 16:18:08,246 [19   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-29 16:18:08,286 [19   ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-29 16:18:08,296 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,306 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:08,316 [19   ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-29 16:18:10,532 [19   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:18:10,532 [19   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:18:10,532 [19   ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:18:10,532 [19   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:18:12,318 [19   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:18:25,524 [19   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-29 16:18:25,584 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-29 16:18:25,584 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-29 16:18:25,584 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-29 16:18:25,594 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-29 16:18:25,755 [19   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 16:18:25,848 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2017-03-29 16:18:25,848 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-29 16:18:25,849 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-29 16:18:25,849 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-29 16:18:25,849 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-29 16:18:25,849 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-29 16:18:25,849 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-29 16:18:25,849 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-29 16:18:28,912 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-29 16:18:28,912 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-29 16:18:28,912 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-29 16:18:28,922 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-03-29 16:18:31,077 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:30.9985701+01:00","Properties":{}}
+DEBUG 2017-03-29 16:18:31,078 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:30.9985701+01:00","Properties":{}}
+DEBUG 2017-03-29 16:18:31,079 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:30.9985701+01:00","Properties":{}}
+DEBUG 2017-03-29 16:18:31,079 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:30.9985701+01:00","Properties":{}}
+DEBUG 2017-03-29 16:18:31,082 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:30.9985701+01:00","Properties":{}}
+DEBUG 2017-03-29 16:18:31,084 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:30.9985701+01:00","Properties":{}}
+DEBUG 2017-03-29 16:18:31,519 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:18:31.4895809+01:00","Properties":{}}
+DEBUG 2017-03-29 16:19:10,998 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 06b0971e-e5ca-4fa4-bd4a-04b28e9c5ad8
+DEBUG 2017-03-29 16:29:55,333 [65   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-03-29 16:29:55,335 [65   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 16:29:55,337 [65   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 16:29:55,337 [65   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-03-29 16:30:49,244 [59   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-03-29 16:30:49,274 [59   ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2017-03-29 16:30:49,284 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Web.SampleLTEWebModule, Afex.WarehouseMan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEDataModule, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTECoreModule, Afex.WarehouseMan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.SampleLTEApplicationModule, Afex.WarehouseMan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Afex.WarehouseMan.Api.SampleLTEWebApiModule, Afex.WarehouseMan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,294 [59   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:49,304 [59   ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2017-03-29 16:30:49,694 [59   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:30:49,694 [59   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:30:49,694 [59   ] o.Configuration.LanguageManagementConfig - Converted SampleLTE (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:30:49,694 [59   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-03-29 16:30:50,465 [59   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Afex.WarehouseMan.EntityFramework.SampleLTEDbContext, Afex.WarehouseMan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-03-29 16:30:52,785 [59   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-03-29 16:30:52,795 [59   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-03-29 16:30:52,795 [59   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-03-29 16:30:52,805 [59   ] Abp.Localization.LocalizationManager     - Initialized localization source: SampleLTE
+DEBUG 2017-03-29 16:30:52,805 [59   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-03-29 16:30:52,925 [59   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-03-29 16:30:53,005 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes define auto mapping attributes
+DEBUG 2017-03-29 16:30:53,005 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.CreateUserInput
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Users.Dto.UserListDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Items.Groups.Dto.ItemGroupDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Items.Dto.ItemDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.BusinessPartners.Dto.BusinessPartnerDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto.SalesInvoiceDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto.SalesInvoiceLineDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountReceivables.GoodsReceipts.Dto.GoodsReceiptDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountReceivables.GoodsReceipts.Dto.GoodsReceiptLineDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountReceivables.CreditMemos.Dto.CreditMemoDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountReceivables.CreditMemoLines.Dto.CreditMemoLineDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountPayables.Dto.PurchaseOrderDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.AccountPayables.Dto.PurchaseOrderLineDto
+DEBUG 2017-03-29 16:30:53,015 [59   ] Abp.AutoMapper.AbpAutoMapperModule       - Afex.WarehouseMan.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-03-29 16:30:55,315 [59   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-03-29 16:30:55,315 [59   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-03-29 16:30:55,315 [59   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-03-29 16:30:55,325 [59   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Afex.WarehouseMan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-03-29 16:30:55,965 [71   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:55.875528+01:00","Properties":{}}
+DEBUG 2017-03-29 16:30:55,965 [70   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:55.865528+01:00","Properties":{}}
+DEBUG 2017-03-29 16:30:55,965 [77   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:55.865528+01:00","Properties":{}}
+DEBUG 2017-03-29 16:30:55,965 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:55.865528+01:00","Properties":{}}
+DEBUG 2017-03-29 16:30:55,965 [65   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:55.865528+01:00","Properties":{}}
+DEBUG 2017-03-29 16:30:55,965 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"5c021af4-b98c-4252-a3dd-01d1890be3e9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:55.865528+01:00","Properties":{}}
+DEBUG 2017-03-29 16:30:56,095 [71   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"227b3432-d602-4071-9558-6700b4296693","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-03-29T16:30:56.0955295+01:00","Properties":{}}
+DEBUG 2017-03-29 16:31:30,946 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5c021af4-b98c-4252-a3dd-01d1890be3e9

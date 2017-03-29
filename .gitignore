@@ -301,3 +301,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+Afex.WarehouseMan.Web/App_Data/Logs/Logs.txt
