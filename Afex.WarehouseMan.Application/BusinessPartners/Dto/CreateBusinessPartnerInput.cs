@@ -27,6 +27,20 @@ namespace Afex.WarehouseMan.BusinessPartners.Dto
 
         public string Website { get; set; }
 
-        public string ContactPerson { get; set; }
+        public string IsActive { get; set; }
+
+        public string ContactPersonName { get; set; }
+
+        public string ContactPersonLastName { get; set; }
+
+        
+        public string ContactPersonFullName
+        {
+            get { return ContactPersonName + " " + ContactPersonLastName; }
+        }
+
+        public string ContactEmail { get; set; }
+
+        public string ContactPhone { get; set; }
     }
 }

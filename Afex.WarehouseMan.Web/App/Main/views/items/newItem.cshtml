@@ -1,0 +1,78 @@
+﻿<div ng-controller="app.views.items.new as vm">
+    <form name="newBizPartnerForm" role="form" novalidate class="form-validation">
+        <div class="row">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Contact</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-4">Item Code</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="ItemCode" ng-model="vm.item.itemCode" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">Item Name</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="LastName" ng-model="vm.item.itemName" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-4">Item Group</div>
+                            <div class="col-sm-8">
+                                <select ng-model="vm.item.itemGroupId" ng-options="x.id as x.name for x in vm.itemGroups" class="form-control">
+                                    @*<option value="">Select a Category Item</option>*@
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">Stock Quantity</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="number" name="StockInQuantity" ng-model="vm.item.quantityInStock" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-4">Unit Price</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="number" name="UnitPrice" ng-model="vm.item.unitPrice" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">Unit Cost</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="number" name="UnitCost" ng-model="vm.item.unitCost" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-4">Remarks</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="Remarks" ng-model="vm.item.remarks" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <div class="col-sm-9">
+                        <input id="btnSave" ng-disabled="newBizPartnerForm.$invalid" ng-click="vm.save()" class="btn btn-sm btn-primary btn-flat pull-left" type="submit" value="Save" />
+                        <a href="#/items" class="btn btn-sm btn-default btn-flat pull-left">Close</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

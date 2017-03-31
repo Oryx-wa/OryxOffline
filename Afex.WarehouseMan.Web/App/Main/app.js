@@ -44,6 +44,16 @@
                         url: '/customers/newCustomer',
                         templateUrl: '/App/Main/views/customers/newCustomer.cshtml',
                         menu: 'Customers' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('items', {
+                        url: '/items',
+                        templateUrl: '/App/Main/views/items/index.cshtml',
+                        menu: 'Items' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('newItem', {
+                        url: '/items/newItem',
+                        templateUrl: '/App/Main/views/items/newitem.cshtml',
+                        menu: 'Items' //Matches to name of 'Users' menu in SampleLTENavigationProvider
                     });
                 $urlRouterProvider.otherwise('/');
             }

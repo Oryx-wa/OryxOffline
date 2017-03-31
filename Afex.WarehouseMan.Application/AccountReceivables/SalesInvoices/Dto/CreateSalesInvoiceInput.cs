@@ -29,6 +29,6 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto
 
         public string Remarks { get; set; }
 
-        public virtual ICollection<SalesInvoiceLineDto> SalesInvoiceLines { get; set; }
+        public virtual ICollection<SalesInvoiceLine> SalesInvoiceLines { get; set; }
     }
 }

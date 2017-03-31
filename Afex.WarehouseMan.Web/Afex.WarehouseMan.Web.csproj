@@ -1108,6 +1108,8 @@
     <Content Include="App\Main\views\customers\newCustomer.js" />
     <Content Include="App\Main\views\directives\autoFocus.js" />
     <Content Include="App\Main\views\directives\enterKey.js" />
+    <Content Include="App\Main\views\items\index.js" />
+    <Content Include="App\Main\views\items\newItem.js" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\headerLte.js" />
     <Content Include="App\Main\views\layout\layout.js" />
@@ -1316,6 +1318,8 @@
     <Content Include="App\Main\views\customers\index.cshtml" />
     <Content Include="App\Main\views\customers\customers.less" />
     <Content Include="App\Main\views\customers\newCustomer.cshtml" />
+    <Content Include="App\Main\views\items\index.cshtml" />
+    <Content Include="App\Main\views\items\newItem.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

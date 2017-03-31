@@ -53,7 +53,22 @@ namespace Afex.WarehouseMan.BusinessPartners
 
         public string Website { get; set; }
 
-        public string ContactPerson { get; set; }
+        public string IsActive { get; set; }
+
+        public string ContactPersonName { get; set; }
+
+        public string ContactPersonLastName { get; set; }
+
+        [NotMapped]
+        public string ContactPersonFullName
+        {
+            get { return ContactPersonName + " " + ContactPersonLastName; }
+        }
+
+        public string ContactEmail { get; set; }
+
+        public string ContactPhone { get; set; }
+
 
         #endregion
 

@@ -1,19 +1,37 @@
 ﻿(function () {
     'use strict';
 
-    angular
-        .module('app')
-        .controller('newCustomer', newCustomer);
+    angular.module('app').controller('app.views.businessPartner.new', [
+        '$scope', '$location', '$state', 'abp.services.app.businessPartner',
+        function ($scope, $location, $state, customerService) {
+            var vm = this;
 
-    newCustomer.$inject = ['$location']; 
+            vm.businessPartner = {
+                cardCode: '',
+                cardName: '',
+                cardType: '1',
+                isActive: true,
+                phone: '',
+                email: '',
+                contactPersonName: '',
+                contactPersonLastName: '',
+                contactPhone: '',
+                contactEmail: ''
+            };
 
-    function newCustomer($location) {
-        /* jshint validthis:true */
-        var vm = this;
-        vm.title = 'newCustomer';
+            vm.save = function () {
+                abp.ui.setBusy();
+                customerService.createAsync(vm.businessPartner).success(function () {
+                    abp.notify.info(App.localize('SavedSuccessfully'));
+                    $location.path('/customers');
+                }).finally(function () {
+                    abp.ui.clearBusy();
+                })
+            };
 
-        activate();
-
-        function activate() { }
-    }
+            vm.cancel = function () {
+                $state.go('customers');
+            }
+        }
+    ]);
 })();

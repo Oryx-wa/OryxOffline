@@ -15,7 +15,7 @@
                         <div class="col-md-6">
                             <div class="col-md-2">Customer</div>
                             <div class="col-md-10">
-                                <select class="form-control select2" style="width: 100%;">
+                                <select class="form-control select2" ng-model="vm.arInvoice.cardCode" name="CardCode" style="width: 100%;">
                                     <option selected="selected">John Doe</option>
                                     <option>James Blunt</option>
                                     <option>Mick Foley</option>
@@ -25,9 +25,9 @@
                                     <option>Alex Fergie</option>
                                 </select>
                             </div>
-                            <div class="col-md-2">Name</div>
+                            <div class="col-md-2">Document Number</div>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="DocNum" ng-model="vm.arInvoice.docNum" />
                             </div>
                             <div class="col-md-2">Contact Person</div>
                             <div class="col-md-10">
@@ -45,7 +45,7 @@
                             </div>
                             <div class="col-md-2">Posting Date</div>
                             <div class="col-md-10">
-                                <input type="date" class="form-control" />
+                                <input type="date" class="form-control"  />
                             </div>
                             @*<div class="col-md-2">Due Date</div>
                             <div class="col-md-10">
@@ -76,23 +76,37 @@
                                         <th>Product</th>
                                         <th>Quantity</th>
                                         <th>Unit Price</th>
+                                        <th>Line Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr ng-repeat="listItem in listItems">
-                                        <td><input type="checkbox" ng-model="listItem.selected"/></td>
-                                        <td><input type="text" class="form-control" ng-model="listItem.itemNo"  required /></td>
-                                        <td><input type="text" class="form-control" ng-model="listItem.product" required /></td>
-                                        <td><input type="number" class="form-control" ng-model="listItem.quantity" required /></td>
-                                        <td><input type="number" class="form-control" ng-model="listItem.unitPrice" required /></td>
+                                    <tr ng-repeat="lineItem in lineItems">
+                                        <td><input type="checkbox" ng-model="lineItem.selected"/></td>
+                                        <td><input type="text" class="form-control" ng-model="lineItem.itemNo"  required /></td>
+                                        <td><input type="text" class="form-control" ng-model="lineItem.product" required /></td>
+                                        <td><input type="number" class="form-control" ng-model="lineItem.quantity" required /></td>
+                                        <td><input type="number" class="form-control" ng-model="lineItem.unitPrice" required /></td>
+                                        <td><span ng-model="lineItem.lineTotal">{{lineItem.quantity * lineItem.unitPrice }}</span></td>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="form-group">
-                                <input ng-hide="!listItems.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove">
+                                <input ng-hide="!lineItems.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove">
                                 <input type="submit" class="btn btn-primary addnew pull-right" value="Add New">
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-danger">
+                <div class="box-body">
+                    <div class="row pull-right">
+                        <div class="col-md-5">
+                            Total:
+                        </div>
+                        <div class="col-md-5">
+                            {{totalAmount}}
+                        </div>
                     </div>
                 </div>
             </div>

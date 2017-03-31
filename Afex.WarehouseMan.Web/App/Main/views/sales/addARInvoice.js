@@ -3,28 +3,19 @@
         '$scope',
         function ($scope) {
 
-            $scope.listItems = [{
-                "itemNo": "A123",
-                "product": "Pampers Maxi",
-                "quantity": 3,
-                "unitPrice": 345
-            },
-            {
-                "itemNo": "A456",
-                "product": "Paper Roll",
-                "quantity": 10,
-                "unitPrice": 645
-            }];
+            $scope.lineItems = [];
+
+            $scope.totalAmount = 0;
 
             $scope.remove = function () {
                 var newDataList = [];
                 $scope.selectedAll = false;
-                angular.forEach($scope.listItems, function (selected) {
+                angular.forEach($scope.lineItems, function (selected) {
                     if (!selected.selected) {
                         newDataList.push(selected);
                     }
                 });
-                $scope.listItems = newDataList;
+                $scope.lineItems = newDataList;
             };
 
             $scope.checkAll = function () {
@@ -33,20 +24,23 @@
                 } else {
                     $scope.selectedAll = false;
                 }
-                angular.forEach($scope.listItems, function (listItem) {
-                    listItem.selected = $scope.selectedAll;
+                angular.forEach($scope.lineItems, function (lineItem) {
+                    lineItem.selected = $scope.selectedAll;
                 });
             };
 
-            $scope.addNew = function (listItem) {
-                $scope.listItems.push({
+            $scope.addNew = function (lineItem) {
+                $scope.lineItems.push({
                     'itemNo': '',
                     'product': '',
                     'quantity': '',
                     'unitPrice': ''
                 });
-               
+                
+
             };
+
+           
         }
     ]);
 })();

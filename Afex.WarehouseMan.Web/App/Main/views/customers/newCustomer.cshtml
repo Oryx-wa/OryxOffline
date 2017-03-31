@@ -1,97 +1,99 @@
-﻿<div>
-    <div class="row">
-        <div class="box box-default">
-            <div class="box-header with-border">
-                <h3 class="box-title">General</h3>
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                        <i class="fa fa-minus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="box-body">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-2">Customer Code</div>
-                        <div class="col-sm-10"><input type="text" class="form-control" name="CustomerCode" /></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2">Full Name</div>
-                        <div class="col-sm-10"><input type="text" class="form-control" name="FullName" /></div>
+﻿<div ng-controller="app.views.businessPartner.new as vm">
+    <form name="newBizPartnerForm" role="form" novalidate class="form-validation">
+        <div class="row">
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <h3 class="box-title">General</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-2">Customer Group</div>
-                        <div class="col-sm-10">
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected">Group 1</option>
-                                <option>Group 2</option>
-                                <option>Group 3</option>
-                            </select>
+                <div class="box-body">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-2">Card Code</div>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="CardCode" ng-model="vm.businessPartner.cardCode" required /></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">Card Name</div>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="CardName" ng-model="vm.businessPartner.cardName" required /></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-2">Is Active</div>
-                        <div class="col-sm-10"><input type="checkbox" class="checkbox-inline" name="IsActive" /></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2">Phone</div>
-                        <div class="col-sm-10"><input type="text" class="form-control" name="Phone" /></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2">Email</div>
-                        <div class="col-sm-10"><input type="email" class="form-control" name="Email" /></div>
-                    </div>
-                </div>
-            </div>
-        </div><hr />
-        <div class="box box-primary">
-            <div class="box-header with-border">
-                <h3 class="box-title">Contact</h3>
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                        <i class="fa fa-minus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="box-body">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-4">First Name</div>
-                        <div class="col-sm-8">
-                            <input class="form-control" type="text" name="FirstName" />
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-2">Card Group</div>
+                            <div class="col-sm-10">
+                                <select class="form-control select2" style="width: 100%;" ng-model="vm.businessPartner.cardType" required>
+                                    <option value="1">Customer</option>
+                                    <option value="2">Vendor</option>
+                                    <option value="3">Lead</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">Last Name</div>
-                        <div class="col-sm-8">
-                            <input class="form-control" type="text" name="LastName" />
+                        <div class="row">
+                            <div class="col-sm-2">Is Active</div>
+                            <div class="col-sm-10"><input type="checkbox" class="checkbox-inline" name="IsActive" ng-model="vm.businessPartner.isActive" /></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">Phone</div>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="Phone" ng-model="vm.businessPartner.phone" /></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">Email</div>
+                            <div class="col-sm-10"><input type="email" class="form-control" name="Email" ng-model="vm.businessPartner.email" /></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-4">Phone</div>
-                        <div class="col-sm-8">
-                            <input class="form-control" type="text" name="ContactPhone" />
+            </div><hr />
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Contact</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-4">First Name</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="FirstName" ng-model="vm.businessPartner.contactPersonName" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">Last Name</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="LastName" ng-model="vm.businessPartner.contactPersonLastName" required />
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-4">Email</div>
-                        <div class="col-sm-8">
-                            <input class="form-control" type="text" name="ContactEmail" />
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-4">Phone</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="ContactPhone" ng-model="vm.businessPartner.contactPhone" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">Email</div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="ContactEmail" ng-model="vm.businessPartner.contactEmail" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="box-footer">
-                <div class="col-sm-9">
-                    <input id="btnSave" class="btn btn-sm btn-primary btn-flat pull-left" type="submit" value="Save" />
-                    <a href="#/customers" class="btn btn-sm btn-default btn-flat pull-left">Close</a>
-                </div>
+                <div class="box-footer">
+                    <div class="col-sm-9">
+                        <input id="btnSave" ng-disabled="newBizPartnerForm.$invalid" ng-click="vm.save()" class="btn btn-sm btn-primary btn-flat pull-left" type="submit" value="Save" />
+                        <a href="#/customers" class="btn btn-sm btn-default btn-flat pull-left">Close</a>
+                    </div>
 
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 </div>

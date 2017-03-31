@@ -32,14 +32,6 @@ namespace Afex.WarehouseMan.Web
                         )
                 ).AddItem(
                     new MenuItemDefinition(
-                        "Users",
-                        L("Users"),
-                        url: "#users",
-                        icon: "fa fa-users",
-                        requiredPermissionName: PermissionNames.Pages_Users
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
                         "Administration",
                         L("Administration"),
                         icon: "fa fa-desktop",
@@ -52,6 +44,11 @@ namespace Afex.WarehouseMan.Web
                             new MenuItemDefinition("Customers",
                             L("Customers"),
                             url: "#customers"
+                            )
+                        ).AddItem(
+                            new MenuItemDefinition("Items",
+                            L("Items"),
+                            url: "#items"
                             )
                         )
                 ).AddItem(

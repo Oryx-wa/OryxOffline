@@ -61,6 +61,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
       <Private>True</Private>
@@ -117,15 +123,21 @@
     <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptLineDto.cs" />
     <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptListInput.cs" />
     <Compile Include="AccountReceivables\GoodsReceipts\Dto\UpdateGoodsReceiptInput.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\GoodsReceiptAppService.cs" />
+    <Compile Include="AccountReceivables\GoodsReceipts\IGoodsReceiptAppService.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\ISalesInvoiceAppService.cs" />
     <Compile Include="AccountReceivables\SalesInvoices\Dto\CreateSalesInvoiceInput.cs" />
     <Compile Include="AccountReceivables\SalesInvoices\Dto\SalesInvoiceDto.cs" />
     <Compile Include="AccountReceivables\SalesInvoices\Dto\SalesInvoiceLineDto.cs" />
     <Compile Include="AccountReceivables\SalesInvoices\Dto\SalesInvoiceListInput.cs" />
     <Compile Include="AccountReceivables\SalesInvoices\Dto\UpdateSalesInvoiceInput.cs" />
+    <Compile Include="AccountReceivables\SalesInvoices\SalesInvoiceAppService.cs" />
+    <Compile Include="BusinessPartners\BusinessPartnerAppService.cs" />
     <Compile Include="BusinessPartners\Dto\BusinessPartnerDto.cs" />
     <Compile Include="BusinessPartners\Dto\BusinessPartnerListInput.cs" />
     <Compile Include="BusinessPartners\Dto\CreateBusinessPartnerInput.cs" />
     <Compile Include="BusinessPartners\Dto\UpdateBusinessPartnerInput.cs" />
+    <Compile Include="BusinessPartners\IBusinessPartnerAppService.cs" />
     <Compile Include="Items\Dto\CreateItemInput.cs" />
     <Compile Include="Items\Dto\ItemDto.cs" />
     <Compile Include="Items\Dto\ItemListInput.cs" />
@@ -134,6 +146,8 @@
     <Compile Include="Items\Groups\Dto\ItemGroupDto.cs" />
     <Compile Include="Items\Groups\Dto\ItemGroupListInput.cs" />
     <Compile Include="Items\Groups\Dto\UpdateItemGroupInput.cs" />
+    <Compile Include="Items\IItemAppService.cs" />
+    <Compile Include="Items\ItemAppService.cs" />
     <Compile Include="SampleLTEApplicationModule.cs" />
     <Compile Include="SampleLTEAppServiceBase.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />

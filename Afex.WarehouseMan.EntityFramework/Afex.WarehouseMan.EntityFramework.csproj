@@ -196,6 +196,14 @@
     <Compile Include="Migrations\201703271225401_Initial.Designer.cs">
       <DependentUpon>201703271225401_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703310726492_ModifiedReceipts.cs" />
+    <Compile Include="Migrations\201703310726492_ModifiedReceipts.Designer.cs">
+      <DependentUpon>201703310726492_ModifiedReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703310903544_ModifiedBizPartner.cs" />
+    <Compile Include="Migrations\201703310903544_ModifiedBizPartner.Designer.cs">
+      <DependentUpon>201703310903544_ModifiedBizPartner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="SampleLTEDataModule.cs" />
@@ -275,6 +283,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703271225401_Initial.resx">
       <DependentUpon>201703271225401_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703310726492_ModifiedReceipts.resx">
+      <DependentUpon>201703310726492_ModifiedReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703310903544_ModifiedBizPartner.resx">
+      <DependentUpon>201703310903544_ModifiedBizPartner.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

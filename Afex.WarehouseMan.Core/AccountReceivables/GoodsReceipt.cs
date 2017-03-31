@@ -32,19 +32,19 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public int CardCode { get; set; } //Foreign Key
 
-        [MaxLength(1), Column("Status")]
-        public string StatusString
-        {
-            get { return Status.ToString(); }
-            private set { Status = value.ParseEnum<PurchaseOrderStatus>(); }
-        }//create enum Field
+        //[MaxLength(1), Column("Status")]
+        //public string StatusString
+        //{
+        //    get { return Status.ToString(); }
+        //    private set { Status = value.ParseEnum<PurchaseOrderStatus>(); }
+        //}//create enum Field
 
-        [NotMapped]
-        public PurchaseOrderStatus Status { get; set; }
+        //[NotMapped]
+        //public PurchaseOrderStatus Status { get; set; }
 
-        public DateTime PostingDate { get; set; }
+        //public DateTime PostingDate { get; set; }
 
-        public DateTime DueDate { get; set; }
+        //public DateTime DueDate { get; set; }
 
         public decimal Amount { get; set; }
 
