@@ -67,9 +67,11 @@ namespace Afex.WarehouseMan.Items
             await _itemRepo.DeleteAsync(input.Id);
         }
 
-        public IEnumerable<Item> GetAllItems()
+        public async Task<ListResultDto<ItemDto>> GetAllItems()
         {
-            throw new NotImplementedException();
+            var items = await _itemRepo.GetAllListAsync();
+
+            return new ListResultDto<ItemDto>(items.MapTo<List<ItemDto>>());
         }
 
         public async Task<ItemDto> GetAsync(EntityDto input)

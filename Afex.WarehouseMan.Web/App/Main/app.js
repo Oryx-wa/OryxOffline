@@ -35,6 +35,11 @@
                         templateUrl: '/App/Main/views/sales/addARInvoice.cshtml',
                         menu: 'SalesInvoices' //Matches to name of 'Users' menu in SampleLTENavigationProvider
                     })
+                    .state('salesInvoiceDetail', {
+                        url: '/salesInvoices/:id',
+                        templateUrl: '/App/Main/views/sales/arInvoice.cshtml',
+                        menu: 'SalesInvoices' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
                     .state('customers', {
                         url: '/customers',
                         templateUrl: '/App/Main/views/customers/index.cshtml',
@@ -54,6 +59,16 @@
                         url: '/items/newItem',
                         templateUrl: '/App/Main/views/items/newitem.cshtml',
                         menu: 'Items' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('goodsReceipts', {
+                        url: '/goodsReceipts',
+                        templateUrl: '/App/Main/views/sales/goodsReceipts.cshtml',
+                        menu: 'GoodsReceipts' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('newGoodsReceipt', {
+                        url: '/goodsReceipts/addNew',
+                        templateUrl: '/App/Main/views/sales/addGoodsReceipt.cshtml',
+                        menu: 'GoodsReceipts' //Matches to name of 'Users' menu in SampleLTENavigationProvider
                     });
                 $urlRouterProvider.otherwise('/');
             }

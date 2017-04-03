@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using Abp.Timing;
 using Afex.WarehouseMan.BusinessPartners;
 using Afex.WarehouseMan.Common;
 using System;
@@ -17,6 +18,11 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public SalesInvoice()
         {
+            Status = PurchaseOrderStatus.Open;
+            Cancelled = false;
+            Printed = false;
+            PostingDate = Clock.Now;
+            DueDate = Clock.Now;
             SalesInvoiceLines = new HashSet<SalesInvoiceLine>();
         } 
 
@@ -24,17 +30,25 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public int? DocNum { get; set; }
 
-        public string DocTypeString { get; set; } //create enum field
+        //[MaxLength(10), Column("DocType")]
+        //public string DocTypeString
+        //{
+        //    get { return DocType.ToString(); }
+        //    private set { DocType = value.ParseEnum<DocumentTypes>(); }
+        //}
+
+        //[NotMapped]
+        //public DocumentTypes? DocType { get; set; }
 
         public bool Cancelled { get; set; }
 
         public bool Printed { get; set; }
 
-        [MaxLength(1), Column("Status")]
+        [MaxLength(10), Column("Status")]
         public string StatusString
         {
             get { return Status.ToString(); }

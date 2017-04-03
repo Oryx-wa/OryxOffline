@@ -24,11 +24,13 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public int? DocNum { get; set; }
 
-        public string DocTypeString { get; set; } 
+        //public DocumentTypes DocType { get; set; }
+
+        //public string DocTypeString { get; private set; } 
 
         public bool Cancelled { get; set; }
 
@@ -36,7 +38,7 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto
         
         public string StatusString { get; private set; }
         
-        public PurchaseOrderStatus Status { get; set; }
+        //public PurchaseOrderStatus Status { get; set; }
 
         public DateTime PostingDate { get; set; }
 

@@ -8,17 +8,15 @@ namespace Afex.WarehouseMan.AccountReceivables.GoodsReceipts.Dto
 {
     public class CreateGoodsReceiptInput
     {
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
         public string DocType { get; set; }
 
         public int CardCode { get; set; }
 
-        public DateTime PostingDate { get; set; }
-
-        public DateTime DueDate { get; set; }
+        public string ContactPerson { get; set; }
 
         public decimal Amount { get; set; }
 

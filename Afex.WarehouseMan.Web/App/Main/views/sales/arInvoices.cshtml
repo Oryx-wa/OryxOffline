@@ -45,20 +45,20 @@
             <table class="table table-striped table-responsive">
                 <thead>
                     <tr>
-                        <th>Item No.</th>
-                        <th>Customer</th>
-                        <th>Product</th>
-                        <th>Unit Price</th>
-                        <th>Date Posted</th>
+                        <th>No.</th>
+                        <th>Business Partner</th>
+                        <th>Invoiced Date</th>
+                        <th>Amount</th>
+                        <th>View</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="invoice in vm.salesInvoices">
-                        <td>{{invoice.itemNo}}</td>
-                        <td>{{invoice.customer}}</td>
-                        <td>{{invoice.product}}</td>
-                        <td>{{invoice.unitPrice}}</td>
-                        <td>{{invoice.datePosted}}</td>
+                        <td>{{invoice.id}}</td>
+                        <td>{{invoice.businessPartner.cardName}}</td>
+                        <td>{{invoice.creationTime | date}}</td>
+                        <td>{{invoice.totalAmount | currency: "N "}}</td>
+                        <td><a class="btn btn-sm btn-info" ng-href="#/salesInvoices/{{invoice.id}}" title="View details"><i class="fa fa-arrow-circle-right"></i> Details</a></td>
                     </tr>
                 </tbody>
             </table>

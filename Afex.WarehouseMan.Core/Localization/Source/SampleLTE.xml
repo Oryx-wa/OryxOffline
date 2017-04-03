@@ -57,6 +57,9 @@
     <text name="Administration" value="Administration" />
     <text name="SalesInvoices" value="Sales Invoices" />
     <text name="Customers" value="Customers"/>
+    <text name="AccountReceivables" value="Account Receivables" />
+    <text name="Items" value="Items" />
+    <text name="GoodsReceipts" value="Goods Receipts" />
     
   </texts>
 </localizationDictionary>

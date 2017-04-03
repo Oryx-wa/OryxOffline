@@ -51,7 +51,7 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
                 //SalesInvoiceLines = input.SalesInvoiceLines
             };
 
-            decimal totalAmount = 0;
+            //decimal totalAmount = 0;
 
             var businessPartner = await _businessPartnerRepo.GetAsync(salesInvoice.CardCode);
 
@@ -59,10 +59,10 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
             foreach (var lineItem in input.SalesInvoiceLines)
             {
                 rowNumber++;
-                var item = await _itemRepo.GetAsync(lineItem.ItemId);
-                var lineAmount = lineItem.Quantity * lineItem.Price;
+                var item = await _itemRepo.GetAsync(lineItem.Item.Id);
+                var lineAmount = lineItem.Quantity * lineItem.Item.UnitPrice;
 
-                totalAmount += lineAmount;
+                //totalAmount += lineAmount;
 
                 item.QuantityInStock = item.QuantityInStock - lineItem.Quantity;
 
@@ -70,15 +70,15 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
                 {
                     SalesInvoiceId = salesInvoice.Id,
                     SalesInvoiceDocEntryId = salesInvoice.DocEntryId,
-                    RowNumber = rowNumber,
-                    Status = Common.PurchaseOrderStatus.Open,
-                    ItemId = lineItem.Id,
-                    Description = lineItem.Description,
+                    RowNumber = lineItem.RowNumber,
+                    //Status = Common.PurchaseOrderStatus.Open,
+                    ItemId = item.Id,
+                    Description = lineItem.Item.ItemName,
                     Quantity = lineItem.Quantity,
-                    Discount = 0,
-                    Price = lineItem.Price,
-                    LineTotal = totalAmount,
-                    PostingDate = Clock.Now
+                    //Discount = 0,
+                    Price = lineItem.Item.UnitPrice,
+                    LineTotal = lineItem.Quantity * lineItem.Item.UnitPrice,
+                    //PostingDate = Clock.Now
                 });
 
                 await _itemRepo.UpdateAsync(item);
@@ -118,7 +118,7 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
             var salesInvoices = _salesInvoiceRepo.GetAll()
                .Include(inv => inv.BusinessPartner)
                .Include(inv => inv.SalesInvoiceLines)
-               .WhereIf(!input.Filter.IsNullOrWhiteSpace(), inv => inv.DocNum.Equals(input.Filter))
+               .WhereIf(!input.Filter.IsNullOrWhiteSpace(), inv => inv.DocNum.Equals(int.Parse(input.Filter)))
                .OrderBy(inv => inv.Id)
                .PageBy(input)
                .ToList();

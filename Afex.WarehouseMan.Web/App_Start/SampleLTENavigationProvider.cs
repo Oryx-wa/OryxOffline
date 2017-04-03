@@ -32,13 +32,17 @@ namespace Afex.WarehouseMan.Web
                         )
                 ).AddItem(
                     new MenuItemDefinition(
-                        "Administration",
-                        L("Administration"),
-                        icon: "fa fa-desktop",
+                        "AccountReceivables",
+                        L("AccountReceivables"),
+                        icon: "fa fa-industry",
                         requiredPermissionName: PermissionNames.Pages_Users
                         ).AddItem(new MenuItemDefinition("SalesInvoices",
                             L("SalesInvoices"),
                             url: "#salesInvoices"
+                            )
+                        ).AddItem(new MenuItemDefinition("GoodsReceipts",
+                            L("GoodsReceipts"),
+                            url: "#goodsReceipts"
                             )
                         ).AddItem(
                             new MenuItemDefinition("Customers",

@@ -1117,7 +1117,10 @@
     <Content Include="App\Main\views\about\about.js" />
     <Content Include="App\Main\views\layout\sidebar.js" />
     <Content Include="App\Main\views\sales\addARInvoice.js" />
+    <Content Include="App\Main\views\sales\addGoodsReceipt.js" />
+    <Content Include="App\Main\views\sales\arInvoice.js" />
     <Content Include="App\Main\views\sales\arInvoices.js" />
+    <Content Include="App\Main\views\sales\goodsReceipts.js" />
     <Content Include="App\Main\views\users\createModal.js" />
     <Content Include="App\Main\views\users\index.js" />
     <Content Include="App\Main\views\tenants\createModal.js" />
@@ -1320,6 +1323,9 @@
     <Content Include="App\Main\views\customers\newCustomer.cshtml" />
     <Content Include="App\Main\views\items\index.cshtml" />
     <Content Include="App\Main\views\items\newItem.cshtml" />
+    <Content Include="App\Main\views\sales\arInvoice.cshtml" />
+    <Content Include="App\Main\views\sales\goodsReceipts.cshtml" />
+    <Content Include="App\Main\views\sales\addGoodsReceipt.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

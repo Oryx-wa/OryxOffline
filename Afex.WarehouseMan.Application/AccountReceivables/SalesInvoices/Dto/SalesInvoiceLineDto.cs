@@ -13,9 +13,9 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto
     [AutoMapFrom(typeof(SalesInvoiceLine))]
     public class SalesInvoiceLineDto : CreationAuditedEntityDto
     {
-        public int SalesInvoiceId { get; set; } 
+        public int SalesInvoiceId { get; set; }
 
-        public int SalesInvoiceDocEntryId { get; set; } 
+        public int? SalesInvoiceDocEntryId { get; set; } 
 
         public int RowNumber { get; set; }
         
@@ -29,7 +29,7 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto
 
         public int Quantity { get; set; }
 
-        public decimal Discount { get; set; }
+        public decimal? Discount { get; set; }
 
         public decimal Price { get; set; }
 

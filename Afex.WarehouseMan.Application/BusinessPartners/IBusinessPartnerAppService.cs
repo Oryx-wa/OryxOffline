@@ -19,7 +19,7 @@ namespace Afex.WarehouseMan.BusinessPartners
 
         BusinessPartnerDto Get(EntityDto input);
 
-        IEnumerable<BusinessPartnerDto> GetCustomers();
+        Task<ListResultDto<BusinessPartnerDto>> GetBusinessPartners();
 
         PagedResultDto<BusinessPartnerDto> GetBusinessPartnersPaged(BusinessPartnerListInput input);
     }

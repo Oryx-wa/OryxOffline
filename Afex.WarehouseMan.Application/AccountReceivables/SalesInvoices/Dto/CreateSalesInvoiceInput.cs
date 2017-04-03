@@ -9,19 +9,19 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices.Dto
 {
     public class CreateSalesInvoiceInput
     {
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public int? DocNum { get; set; }
 
-        public string DocTypeString { get; set; }
+        public DocumentTypes? DocType { get; set; }
 
         //public bool Cancelled { get; set; }
 
         //public bool Printed { get; set; }
 
-        public DateTime PostingDate { get; set; }
+        //public DateTime PostingDate { get; set; }
 
-        public DateTime DueDate { get; set; }
+        //public DateTime DueDate { get; set; }
 
         public int CardCode { get; set; }
 

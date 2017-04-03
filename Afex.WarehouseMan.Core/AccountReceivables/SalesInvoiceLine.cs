@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using Abp.Timing;
 using Afex.WarehouseMan.Common;
 using Afex.WarehouseMan.Items;
 using System;
@@ -13,13 +14,19 @@ namespace Afex.WarehouseMan.AccountReceivables
 {
     public class SalesInvoiceLine : CreationAuditedEntity
     {
+        public SalesInvoiceLine()
+        {
+            Status = PurchaseOrderStatus.Open;
+            PostingDate = Clock.Now;
+        }
+
         public int SalesInvoiceId { get; set; } //Foreign Key
 
-        public int SalesInvoiceDocEntryId { get; set; } //Foreign Key
+        public int? SalesInvoiceDocEntryId { get; set; } //Foreign Key
 
         public int RowNumber { get; set; }
 
-        [MaxLength(1), Column("Status")]
+        [MaxLength(10), Column("Status")]
         public string StatusString
         {
             get { return Status.ToString(); }
@@ -35,7 +42,7 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public int Quantity { get; set; }
 
-        public decimal Discount { get; set; }
+        public decimal? Discount { get; set; }
 
         public decimal Price { get; set; }
 

@@ -22,7 +22,7 @@ namespace Afex.WarehouseMan.Items
 
         PagedResultDto<ItemDto> GetItemsList(ItemListInput input);
 
-        IEnumerable<Item> GetAllItems();
+        Task<ListResultDto<ItemDto>> GetAllItems();
 
         Task CreateItemGroupAsync(CreateItemGroupInput input);
 

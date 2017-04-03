@@ -204,6 +204,26 @@
     <Compile Include="Migrations\201703310903544_ModifiedBizPartner.Designer.cs">
       <DependentUpon>201703310903544_ModifiedBizPartner.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704030155055_ModifiedDB.cs" />
+    <Compile Include="Migrations\201704030155055_ModifiedDB.Designer.cs">
+      <DependentUpon>201704030155055_ModifiedDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704031032540_SalesInvoiceStatus.cs" />
+    <Compile Include="Migrations\201704031032540_SalesInvoiceStatus.Designer.cs">
+      <DependentUpon>201704031032540_SalesInvoiceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704031223441_DocTypeUnmapped.cs" />
+    <Compile Include="Migrations\201704031223441_DocTypeUnmapped.Designer.cs">
+      <DependentUpon>201704031223441_DocTypeUnmapped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704031336563_DocTypeRemoved.cs" />
+    <Compile Include="Migrations\201704031336563_DocTypeRemoved.Designer.cs">
+      <DependentUpon>201704031336563_DocTypeRemoved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704031605273_ModifiedGoodsReceipt.cs" />
+    <Compile Include="Migrations\201704031605273_ModifiedGoodsReceipt.Designer.cs">
+      <DependentUpon>201704031605273_ModifiedGoodsReceipt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="SampleLTEDataModule.cs" />
@@ -289,6 +309,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703310903544_ModifiedBizPartner.resx">
       <DependentUpon>201703310903544_ModifiedBizPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704030155055_ModifiedDB.resx">
+      <DependentUpon>201704030155055_ModifiedDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704031032540_SalesInvoiceStatus.resx">
+      <DependentUpon>201704031032540_SalesInvoiceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704031223441_DocTypeUnmapped.resx">
+      <DependentUpon>201704031223441_DocTypeUnmapped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704031336563_DocTypeRemoved.resx">
+      <DependentUpon>201704031336563_DocTypeRemoved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704031605273_ModifiedGoodsReceipt.resx">
+      <DependentUpon>201704031605273_ModifiedGoodsReceipt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

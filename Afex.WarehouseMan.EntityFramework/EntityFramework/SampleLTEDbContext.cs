@@ -113,7 +113,7 @@ namespace Afex.WarehouseMan.EntityFramework
             modelBuilder.Entity<SalesInvoiceLine>()
                 .HasRequired(c => c.SalesInvoice).WithMany().HasForeignKey(c => c.SalesInvoiceId);
             modelBuilder.Entity<SalesInvoiceLine>()
-                .HasRequired(c => c.SalesInvoice).WithMany().HasForeignKey(c => c.SalesInvoiceDocEntryId);
+                .HasOptional(c => c.SalesInvoice).WithMany().HasForeignKey(c => c.SalesInvoiceDocEntryId);
             modelBuilder.Entity<SalesInvoiceLine>()
                 .HasRequired(c => c.Item).WithMany().HasForeignKey(c => c.ItemId);
 

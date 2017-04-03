@@ -89,9 +89,11 @@ namespace Afex.WarehouseMan.BusinessPartners
             };
         }
 
-        public IEnumerable<BusinessPartnerDto> GetCustomers()
+        public async Task<ListResultDto<BusinessPartnerDto>> GetBusinessPartners()
         {
-            throw new NotImplementedException();
+            var bizPartners = await _businessPartnerRepo.GetAllListAsync();
+
+            return new ListResultDto<BusinessPartnerDto>(bizPartners.MapTo<List<BusinessPartnerDto>>());
         }
 
         public async Task UpdateAsync(UpdateBusinessPartnerInput input)

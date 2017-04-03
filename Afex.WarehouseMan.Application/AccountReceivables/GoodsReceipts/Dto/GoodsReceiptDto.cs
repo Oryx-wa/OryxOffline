@@ -24,9 +24,9 @@ namespace Afex.WarehouseMan.AccountReceivables.GoodsReceipts.Dto
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
         public string DocType { get; set; }
 
@@ -36,9 +36,7 @@ namespace Afex.WarehouseMan.AccountReceivables.GoodsReceipts.Dto
 
         public PurchaseOrderStatus Status { get; set; }
 
-        public DateTime PostingDate { get; set; }
-
-        public DateTime DueDate { get; set; }
+        public string ContactPerson { get; set; }
 
         public decimal Amount { get; set; }
 

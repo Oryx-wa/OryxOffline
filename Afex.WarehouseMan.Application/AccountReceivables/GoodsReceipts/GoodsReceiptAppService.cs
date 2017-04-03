@@ -39,6 +39,7 @@ namespace Afex.WarehouseMan.AccountReceivables.GoodsReceipts
                 DocNum = input.DocNum,
                 DocType = input.DocType,
                 CardCode = input.CardCode,
+                ContactPerson = input.ContactPerson,
                 Amount = input.Amount,
                 Remarks = input.Remarks
             };

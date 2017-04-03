@@ -16,11 +16,11 @@ namespace Afex.WarehouseMan.Common
 
     public enum DocumentTypes
     {
-        [Display(Name = "Item")]
-        I = 1,
+        //[Display(Name = "Item")]
+        Item = 1,
 
-        [Display(Name = "Service")]
-        S = 2
+        //[Display(Name = "Service")]
+        Service = 2
     }
 
     public enum PurchaseOrderStatus

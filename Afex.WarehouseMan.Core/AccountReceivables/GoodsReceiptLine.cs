@@ -17,7 +17,7 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public int GoodsReceiptId { get; set; } //Foreign Key
 
-        public int GoodsReceiptDocEntryId { get; set; } //Foreign Key
+        public int? GoodsReceiptDocEntryId { get; set; } //Foreign Key
 
         public int RowNumber { get; set; }
 
@@ -37,7 +37,7 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public int Quantity { get; set; }
 
-        public decimal Discount { get; set; }
+        public decimal? Discount { get; set; }
 
         public decimal Price { get; set; }
 

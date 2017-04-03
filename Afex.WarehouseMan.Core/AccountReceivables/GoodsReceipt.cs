@@ -24,9 +24,10 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        [MaxLength(20)]
+        public string DocNum { get; set; }
 
         public string DocType { get; set; }
 
@@ -45,6 +46,8 @@ namespace Afex.WarehouseMan.AccountReceivables
         //public DateTime PostingDate { get; set; }
 
         //public DateTime DueDate { get; set; }
+
+        public string ContactPerson { get; set; }
 
         public decimal Amount { get; set; }
 
