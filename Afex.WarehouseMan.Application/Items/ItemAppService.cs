@@ -64,7 +64,12 @@ namespace Afex.WarehouseMan.Items
 
         public async Task DeleteAsync(EntityDto input)
         {
-            await _itemRepo.DeleteAsync(input.Id);
+            var item = await _itemRepo.GetAsync(input.Id);
+            var itemGroup = await _itemGroupRepo.GetAsync(item.ItemGroupId.Value);
+            if (itemGroup != null)
+                itemGroup.Items.Remove(item);
+            else
+                await _itemRepo.DeleteAsync(input.Id);
         }
 
         public async Task<ListResultDto<ItemDto>> GetAllItems()

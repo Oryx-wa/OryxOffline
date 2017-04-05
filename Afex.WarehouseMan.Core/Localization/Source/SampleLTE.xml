@@ -60,6 +60,8 @@
     <text name="AccountReceivables" value="Account Receivables" />
     <text name="Items" value="Items" />
     <text name="GoodsReceipts" value="Goods Receipts" />
-    
+    <text name="AccountPayables" value="Account Payables" />
+    <text name="PurchaseOrders" value="Purchase Orders" />
+    <text name="CreditNotes" value="Credit Notes"/>
   </texts>
 </localizationDictionary>

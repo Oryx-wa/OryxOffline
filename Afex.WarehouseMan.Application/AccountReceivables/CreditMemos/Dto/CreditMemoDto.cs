@@ -25,11 +25,13 @@ namespace Afex.WarehouseMan.AccountReceivables.CreditMemos.Dto
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
-        public string DocTypeString { get; set; } //create enum field
+        public string DocTypeString { get; private set; } //create enum field
+
+        public DocumentTypes DocumentType { get; set; }
 
         public bool? Cancelled { get; set; }
 
@@ -45,6 +47,9 @@ namespace Afex.WarehouseMan.AccountReceivables.CreditMemos.Dto
 
         public DateTime? DueDate { get; set; }
 
+        public string ContactPerson { get; set; }
+
+        public decimal? TotalAmount { get; set; }
 
         public string Remarks { get; set; }
 

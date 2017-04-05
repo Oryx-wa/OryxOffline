@@ -17,7 +17,7 @@ namespace Afex.WarehouseMan.AccountPayables.Dto
 
         public int PurchaseOrderId { get; set; } //Foreign Key
 
-        public int PurchaseOrderDocEntryId { get; set; } //Foreign Key
+        public int? PurchaseOrderDocEntryId { get; set; } //Foreign Key
 
         public int RowNumber { get; set; }
         

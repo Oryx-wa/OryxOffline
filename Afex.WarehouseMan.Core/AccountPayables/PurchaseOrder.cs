@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using Abp.Timing;
 using Afex.WarehouseMan.BusinessPartners;
 using Afex.WarehouseMan.Common;
 using System;
@@ -17,6 +18,12 @@ namespace Afex.WarehouseMan.AccountPayables
 
         public PurchaseOrder()
         {
+            DocumentType = DocumentTypes.Item;
+            PostingDate = Clock.Now;
+            DueDate = Clock.Now;
+            Cancelled = false;
+            Printed = false;
+            Status = PurchaseOrderStatus.Open;
             PurchaseOrderLines = new HashSet<PurchaseOrderLine>();
         }
 
@@ -24,11 +31,11 @@ namespace Afex.WarehouseMan.AccountPayables
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
-        [MaxLength(1), Column("DocumentType")]
+        [MaxLength(30), Column("DocumentType")]
         public string DocTypeString
         {
             get { return DocumentType.ToString(); }
@@ -42,7 +49,7 @@ namespace Afex.WarehouseMan.AccountPayables
 
         public bool? Printed { get; set; }
 
-        [MaxLength(1), Column("Status")]
+        [MaxLength(30), Column("Status")]
         public string StatusString
         {
             get { return Status.ToString(); }
@@ -55,6 +62,9 @@ namespace Afex.WarehouseMan.AccountPayables
         public int CardCode { get; set; } //Foreign Key
 
         public decimal? TotalAmount { get; set; }
+
+        [MaxLength(100)]
+        public string ContactPerson { get; set; }
 
         [MaxLength(254)]
         public string Remarks { get; set; }

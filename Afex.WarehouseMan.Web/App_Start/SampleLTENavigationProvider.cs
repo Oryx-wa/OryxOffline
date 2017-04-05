@@ -44,6 +44,10 @@ namespace Afex.WarehouseMan.Web
                             L("GoodsReceipts"),
                             url: "#goodsReceipts"
                             )
+                        ).AddItem(new MenuItemDefinition("CreditNotes",
+                            L("CreditNotes"),
+                            url: "#creditNotes"
+                            )
                         ).AddItem(
                             new MenuItemDefinition("Customers",
                             L("Customers"),
@@ -54,6 +58,19 @@ namespace Afex.WarehouseMan.Web
                             L("Items"),
                             url: "#items"
                             )
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        "AccountPayables",
+                        L("AccountPayables"),
+                        icon: "fa fa-anchor",
+                        requiredPermissionName: PermissionNames.Pages_Users
+                        ).AddItem(
+                            new MenuItemDefinition(
+                                "PurchaseOrders",
+                                L("PurchaseOrders"),
+                                url: "#purchaseOrders"
+                                )
                         )
                 ).AddItem(
                     new MenuItemDefinition(

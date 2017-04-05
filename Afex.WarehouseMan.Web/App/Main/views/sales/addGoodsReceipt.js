@@ -12,7 +12,7 @@
             vm.goodsReceipt = {
                 cardCode: 1,
                 docNum: '',
-                totalAmount: '',
+                amount: '',
                 remarks: '',
                 goodsReceiptLines: $scope.lineItems
             };
@@ -57,7 +57,7 @@
                 for (var i = 0; i < $scope.lineItems.length; i++) {
                     var lineItem = $scope.lineItems[i];
                     total += (lineItem.quantity * lineItem.item.unitPrice);
-                    vm.goodsReceipt.totalAmount = total;
+                    vm.goodsReceipt.amount = total;
                 }
 
                 return total;

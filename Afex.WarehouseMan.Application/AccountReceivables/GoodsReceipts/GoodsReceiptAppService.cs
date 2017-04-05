@@ -44,33 +44,32 @@ namespace Afex.WarehouseMan.AccountReceivables.GoodsReceipts
                 Remarks = input.Remarks
             };
 
-            decimal totalAmount = 0;
+            //decimal totalAmount = 0;
 
-            var businessPartner = await _businessPartnerRepo.GetAsync(goodsReceipt.CardCode);
+            //var businessPartner = await _businessPartnerRepo.GetAsync(goodsReceipt.CardCode);
 
-            int rowNumber = 0;
+            //int rowNumber = 0;
             foreach (var lineItem in input.GoodsReceiptLines)
             {
-                rowNumber++;
-                var item = await _itemRepo.GetAsync(lineItem.ItemId);
-                var lineAmount = lineItem.Quantity * lineItem.Price;
+                //rowNumber++;
+                var item = await _itemRepo.GetAsync(lineItem.Item.Id);
+                //var lineAmount = lineItem.Quantity * lineItem.Price;
 
-                totalAmount += lineAmount;
+                //totalAmount += lineAmount;
 
-                item.QuantityInStock = item.QuantityInStock - lineItem.Quantity;
+                item.QuantityInStock = item.QuantityInStock + lineItem.Quantity;
 
                 goodsReceipt.GoodsReceiptLines.Add(new GoodsReceiptLine
                 {
                     GoodsReceiptId = goodsReceipt.Id,
                     GoodsReceiptDocEntryId = goodsReceipt.DocEntryId,
-                    RowNumber = rowNumber,
+                    RowNumber = lineItem.RowNumber,
                     Status = Common.PurchaseOrderStatus.Open,
-                    ItemId = lineItem.Id,
-                    Description = lineItem.Description,
+                    ItemId = item.Id,
+                    Description = lineItem.Item.ItemName,
                     Quantity = lineItem.Quantity,
-                    Discount = 0,
-                    Price = lineItem.Price,
-                    LineTotal = totalAmount
+                    Price = lineItem.Item.UnitPrice,
+                    LineTotal = lineItem.Quantity * lineItem.Item.UnitPrice
                 });
 
                 await _itemRepo.UpdateAsync(item);

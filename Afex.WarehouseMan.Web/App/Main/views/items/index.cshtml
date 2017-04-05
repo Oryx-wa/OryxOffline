@@ -37,15 +37,30 @@
                         <th>Item Group</th>
                         <th>Stock Qty</th>
                         <th>Unit Price</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="item in vm.items">
-                        <td>{{item.itemCode}}</td>
-                        <td>{{item.itemName}}</td>
-                        <td>{{item.itemGroup.Name}}</td>
-                        <td>{{item.quantityInStock}}</td>
-                        <td>{{item.unitPrice}}</td>
+                        <td>{{item.itemCode}}
+                            <input type="text" ng-show="item.showEdit" ng-model="item.itemCode" class="form-control" /></td>
+                        <td>{{item.itemName}}
+                            <input type="text" ng-show="item.showEdit" ng-model="item.itemName" class="form-control" /></td>
+                        <td>{{item.itemGroup.name}}
+                            <select class="form-control" ng-show="item.showEdit" ng-model="item.itemGroup.id" ng-options="itemGroup.id as itemGroup.name for itemGroup in vm.itemGroups" name="ItemGroupId" style="width: 100%;">
+                            </select>
+                        </td>
+                        <td>{{item.quantityInStock}}
+                            <input type="number" ng-show="item.showEdit" ng-model="item.quantityInStock" class="form-control" /></td>
+                        <td>{{item.unitPrice}}
+                            <input type="number" ng-show="item.showEdit" ng-model="item.unitPrice" class="form-control" /></td>
+                        <td>
+                            <span ng- ng-show="!item.showEdit" ng-click="toggleEdit(item)" class="glyphicon glyphicon-pencil"></span>
+                            <span ng-show="item.showEdit" ng-click="vm.save(item)" class="glyphicon glyphicon-ok"></span><br />
+                            <span ng-show="item.showEdit" ng-click="toggleEdit(item)" class="glyphicon glyphicon-ban-circle"></span>
+                        </td>
+                        <td><span class="glyphicon glyphicon-remove" ng-click="vm.delete(item)"></span></td>
                     </tr>
                 </tbody>
             </table>

@@ -23,14 +23,14 @@
                      $location.path('/items');
                  }).finally(function () {
                      abp.ui.clearBusy();
-                 })
-             }
+                 });
+             };
 
              vm.itemGroups = [];
              vm.loadGroups = function getGroupList() {
                  itemService.getItemGroupsList().success(function (result) {
                      vm.itemGroups = result.items;
-                 })
+                 });
              };
 
              vm.loadGroups();

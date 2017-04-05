@@ -11,9 +11,9 @@ namespace Afex.WarehouseMan.AccountReceivables.CreditMemos.Dto
     {
         public int DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
-        public string DocTypeString { get; set; }
+        //public string DocTypeString { get; set; }
 
         //public bool? Cancelled { get; set; }
 
@@ -29,6 +29,9 @@ namespace Afex.WarehouseMan.AccountReceivables.CreditMemos.Dto
 
         public DateTime? DueDate { get; set; }
 
+        public string ContactPerson { get; set; }
+
+        public decimal? TotalAmount { get; set; }
 
         public string Remarks { get; set; }
 

@@ -9,11 +9,11 @@ namespace Afex.WarehouseMan.AccountPayables.Dto
 {
     public class CreatePurchaseOrderInput
     {
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
-        public DocumentTypes DocumentType { get; set; }
+        //public DocumentTypes DocumentType { get; set; }
 
         //public PurchaseOrderStatus? Status { get; set; }
 
@@ -21,12 +21,14 @@ namespace Afex.WarehouseMan.AccountPayables.Dto
 
         public decimal? TotalAmount { get; set; }
 
+        public string ContactPerson { get; set; }
+
         public string Remarks { get; set; }
 
-        public DateTime? PostingDate { get; set; }
+        //public DateTime? PostingDate { get; set; }
 
-        public DateTime? DueDate { get; set; }
+        //public DateTime? DueDate { get; set; }
 
-        public virtual ICollection<PurchaseOrderLineDto> PurchaseOrderLineDto { get; set; }
+        public virtual ICollection<PurchaseOrderLineDto> PurchaseOrderLines { get; set; }
     }
 }

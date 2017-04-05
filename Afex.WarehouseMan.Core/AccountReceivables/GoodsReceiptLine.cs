@@ -21,7 +21,7 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public int RowNumber { get; set; }
 
-        [MaxLength(1), Column("Status")]
+        [MaxLength(30), Column("Status")]
         public string StatusString
         {
             get { return Status.ToString(); }

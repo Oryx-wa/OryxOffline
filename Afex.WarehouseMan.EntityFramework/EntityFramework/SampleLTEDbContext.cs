@@ -83,7 +83,7 @@ namespace Afex.WarehouseMan.EntityFramework
             modelBuilder.Entity<PurchaseOrderLine>()
                .HasRequired(p => p.PurchaseOrder).WithMany().HasForeignKey(p => p.PurchaseOrderId);
             modelBuilder.Entity<PurchaseOrderLine>()
-                .HasRequired(p => p.PurchaseOrder).WithMany().HasForeignKey(p => p.PurchaseOrderDocEntryId);
+                .HasOptional(p => p.PurchaseOrder).WithMany().HasForeignKey(p => p.PurchaseOrderDocEntryId);
             modelBuilder.Entity<PurchaseOrderLine>()
                 .HasRequired(p => p.Item).WithMany().HasForeignKey(p => p.ItemId);
 
@@ -93,7 +93,7 @@ namespace Afex.WarehouseMan.EntityFramework
             modelBuilder.Entity<CreditMemoLine>()
                 .HasRequired(c => c.CreditMemo).WithMany().HasForeignKey(c => c.CreditMemoId);
             modelBuilder.Entity<CreditMemoLine>()
-                .HasRequired(c => c.CreditMemo).WithMany().HasForeignKey(c => c.CreditMemoDocEntryId);
+                .HasOptional(c => c.CreditMemo).WithMany().HasForeignKey(c => c.CreditMemoDocEntryId);
             modelBuilder.Entity<CreditMemoLine>()
                 .HasRequired(c => c.Item).WithMany().HasForeignKey(c => c.ItemId);
 
@@ -103,7 +103,7 @@ namespace Afex.WarehouseMan.EntityFramework
             modelBuilder.Entity<GoodsReceiptLine>()
                 .HasRequired(c => c.GoodsReceipt).WithMany().HasForeignKey(c => c.GoodsReceiptId);
             modelBuilder.Entity<GoodsReceiptLine>()
-                .HasRequired(c => c.GoodsReceipt).WithMany().HasForeignKey(c => c.GoodsReceiptDocEntryId);
+                .HasOptional(c => c.GoodsReceipt).WithMany().HasForeignKey(c => c.GoodsReceiptDocEntryId);
             modelBuilder.Entity<GoodsReceiptLine>()
                 .HasRequired(c => c.Item).WithMany().HasForeignKey(c => c.ItemId);
 

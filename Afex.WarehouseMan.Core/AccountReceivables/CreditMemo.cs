@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using Abp.Timing;
 using Afex.WarehouseMan.BusinessPartners;
 using Afex.WarehouseMan.Common;
 using System;
@@ -17,6 +18,12 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public CreditMemo()
         {
+            DocumentType = DocumentTypes.Item;
+            DatePosted = Clock.Now;
+            DueDate = Clock.Now;
+            Cancelled = false;
+            Printed = false;
+            Status = PurchaseOrderStatus.Open;
             CreditMemoLines = new HashSet<CreditMemoLine>();
         }
 
@@ -24,17 +31,25 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
-        public string DocTypeString { get; set; } //create enum field
+        [MaxLength(30), Column("DocumentType")]
+        public string DocTypeString
+        {
+            get { return DocumentType.ToString(); }
+            private set { DocumentType = value.ParseEnum<DocumentTypes>(); }
+        }//create enum field
+
+        [NotMapped]
+        public DocumentTypes DocumentType { get; set; }
 
         public bool? Cancelled { get; set; }
 
         public bool? Printed { get; set; }
 
-        [MaxLength(1), Column("Status")]
+        [MaxLength(30), Column("Status")]
         public string StatusString
         {
             get { return Status.ToString(); }
@@ -50,6 +65,10 @@ namespace Afex.WarehouseMan.AccountReceivables
 
         public DateTime? DueDate { get; set; }
 
+        [MaxLength(100)]
+        public string ContactPerson { get; set; }
+
+        public decimal? TotalAmount { get; set; }
 
         public string Remarks { get; set; }
 

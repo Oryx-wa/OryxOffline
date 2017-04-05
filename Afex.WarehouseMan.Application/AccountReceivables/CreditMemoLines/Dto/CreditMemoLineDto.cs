@@ -18,7 +18,7 @@ namespace Afex.WarehouseMan.AccountReceivables.CreditMemoLines.Dto
 
         public int CreditMemoId { get; set; } 
 
-        public int CreditMemoDocEntryId { get; set; } 
+        public int? CreditMemoDocEntryId { get; set; } 
 
         public int RowNumber { get; set; }
         
@@ -32,7 +32,7 @@ namespace Afex.WarehouseMan.AccountReceivables.CreditMemoLines.Dto
 
         public int Quantity { get; set; }
 
-        public decimal Discount { get; set; }
+        public decimal? Discount { get; set; }
 
         public decimal Price { get; set; }
 

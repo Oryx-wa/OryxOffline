@@ -1116,10 +1116,17 @@
     <Content Include="App\Main\views\home\home.js" />
     <Content Include="App\Main\views\about\about.js" />
     <Content Include="App\Main\views\layout\sidebar.js" />
+    <Content Include="App\Main\views\purchases\addPurchaseOrder.js" />
+    <Content Include="App\Main\views\purchases\purchaseOrder.js" />
+    <Content Include="App\Main\views\purchases\purchaseOrders.js" />
     <Content Include="App\Main\views\sales\addARInvoice.js" />
+    <Content Include="App\Main\views\sales\addCreditNote.js" />
     <Content Include="App\Main\views\sales\addGoodsReceipt.js" />
     <Content Include="App\Main\views\sales\arInvoice.js" />
     <Content Include="App\Main\views\sales\arInvoices.js" />
+    <Content Include="App\Main\views\sales\creditNote.js" />
+    <Content Include="App\Main\views\sales\creditNotes.js" />
+    <Content Include="App\Main\views\sales\goodsReceipt.js" />
     <Content Include="App\Main\views\sales\goodsReceipts.js" />
     <Content Include="App\Main\views\users\createModal.js" />
     <Content Include="App\Main\views\users\index.js" />
@@ -1326,6 +1333,13 @@
     <Content Include="App\Main\views\sales\arInvoice.cshtml" />
     <Content Include="App\Main\views\sales\goodsReceipts.cshtml" />
     <Content Include="App\Main\views\sales\addGoodsReceipt.cshtml" />
+    <Content Include="App\Main\views\sales\goodsReceipt.cshtml" />
+    <Content Include="App\Main\views\purchases\purchaseOrders.cshtml" />
+    <Content Include="App\Main\views\purchases\addPurchaseOrder.cshtml" />
+    <Content Include="App\Main\views\purchases\purchaseOrder.cshtml" />
+    <Content Include="App\Main\views\sales\creditNotes.cshtml" />
+    <Content Include="App\Main\views\sales\addCreditNote.cshtml" />
+    <Content Include="App\Main\views\sales\creditNote.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -2196,7 +2210,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Main\views\Purchases\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

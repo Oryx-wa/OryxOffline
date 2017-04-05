@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using Abp.Timing;
 using Afex.WarehouseMan.Common;
 using Afex.WarehouseMan.Items;
 using System;
@@ -13,15 +14,21 @@ namespace Afex.WarehouseMan.AccountPayables
 {
     public class PurchaseOrderLine : CreationAuditedEntity
     {
+        public PurchaseOrderLine()
+        {
+            PostingDate = Clock.Now;
+            DueDate = Clock.Now;
+            Status = PurchaseOrderStatus.Open;
+        }
         #region Properties
 
         public int PurchaseOrderId { get; set; } //Foreign Key
 
-        public int PurchaseOrderDocEntryId { get; set; } //Foreign Key
+        public int? PurchaseOrderDocEntryId { get; set; } //Foreign Key
 
         public int RowNumber { get; set; }
 
-        [MaxLength(1), Column("Status")]
+        [MaxLength(30), Column("Status")]
         public string StatusString
         {
             get { return Status.ToString(); }

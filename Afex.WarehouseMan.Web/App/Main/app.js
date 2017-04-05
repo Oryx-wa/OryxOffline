@@ -69,6 +69,41 @@
                         url: '/goodsReceipts/addNew',
                         templateUrl: '/App/Main/views/sales/addGoodsReceipt.cshtml',
                         menu: 'GoodsReceipts' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('goodsReceiptDetail', {
+                        url: '/goodsReceipts/:id',
+                        templateUrl: '/App/Main/views/sales/goodsReceipt.cshtml',
+                        menu: 'GoodsReceipts' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('purchaseOrders', {
+                        url: '/purchaseOrders',
+                        templateUrl: '/App/Main/views/purchases/purchaseOrders.cshtml',
+                        menu: 'PurchaseOrders' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('newPurchaseOrder', {
+                        url: '/purchaseOrders/addNew',
+                        templateUrl: '/App/Main/views/purchases/addPurchaseOrder.cshtml',
+                        menu: 'PurchaseOrders' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('purchaseOrderDetail', {
+                        url: '/purchaseOrders/:id',
+                        templateUrl: '/App/Main/views/purchases/purchaseOrder.cshtml',
+                        menu: 'PurchaseOrders' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('creditNotes', {
+                        url: '/creditNotes',
+                        templateUrl: '/App/Main/views/sales/creditNotes.cshtml',
+                        menu: 'CreditNotes' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('newCreditNote', {
+                        url: '/creditNotes/addNew',
+                        templateUrl: '/App/Main/views/sales/addCreditNote.cshtml',
+                        menu: 'CreditNotes' //Matches to name of 'Users' menu in SampleLTENavigationProvider
+                    })
+                    .state('creditNoteDetail', {
+                        url: '/creditNotes/:id',
+                        templateUrl: '/App/Main/views/sales/creditNote.cshtml',
+                        menu: 'CreditNotes' //Matches to name of 'Users' menu in SampleLTENavigationProvider
                     });
                 $urlRouterProvider.otherwise('/');
             }

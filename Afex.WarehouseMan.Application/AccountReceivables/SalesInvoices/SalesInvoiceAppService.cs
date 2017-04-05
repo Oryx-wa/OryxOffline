@@ -55,12 +55,12 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
 
             var businessPartner = await _businessPartnerRepo.GetAsync(salesInvoice.CardCode);
 
-            int rowNumber = 0;
+            //int rowNumber = 0;
             foreach (var lineItem in input.SalesInvoiceLines)
             {
-                rowNumber++;
+                //rowNumber++;
                 var item = await _itemRepo.GetAsync(lineItem.Item.Id);
-                var lineAmount = lineItem.Quantity * lineItem.Item.UnitPrice;
+                //var lineAmount = lineItem.Quantity * lineItem.Item.UnitPrice;
 
                 //totalAmount += lineAmount;
 

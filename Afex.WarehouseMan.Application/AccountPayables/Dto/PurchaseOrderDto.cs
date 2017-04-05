@@ -26,9 +26,9 @@ namespace Afex.WarehouseMan.AccountPayables.Dto
 
         #region Properties
 
-        public int DocEntryId { get; set; }
+        public int? DocEntryId { get; set; }
 
-        public int DocNum { get; set; }
+        public string DocNum { get; set; }
 
         public string DocTypeString
         {
@@ -53,7 +53,9 @@ namespace Afex.WarehouseMan.AccountPayables.Dto
         public int CardCode { get; set; } 
 
         public decimal? TotalAmount { get; set; }
-        
+
+        public string ContactPerson { get; set; }
+
         public string Remarks { get; set; }
 
         public DateTime? PostingDate { get; set; }

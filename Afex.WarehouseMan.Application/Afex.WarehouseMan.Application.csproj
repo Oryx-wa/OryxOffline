@@ -113,11 +113,15 @@
     <Compile Include="AccountPayables\Dto\PurchaseOrderLineDto.cs" />
     <Compile Include="AccountPayables\Dto\PurchaseOrderListInput.cs" />
     <Compile Include="AccountPayables\Dto\UpdatePurchaseOrderInput.cs" />
+    <Compile Include="AccountPayables\IPurchaseOrderAppService.cs" />
+    <Compile Include="AccountPayables\PurchaseOrderAppService.cs" />
     <Compile Include="AccountReceivables\CreditMemoLines\Dto\CreditMemoLineDto.cs" />
+    <Compile Include="AccountReceivables\CreditMemos\CreditMemoAppService.cs" />
     <Compile Include="AccountReceivables\CreditMemos\Dto\CreateCreditMemoInput.cs" />
     <Compile Include="AccountReceivables\CreditMemos\Dto\CreditMemoDto.cs" />
     <Compile Include="AccountReceivables\CreditMemos\Dto\CreditMemoListInput.cs" />
     <Compile Include="AccountReceivables\CreditMemos\Dto\UpdateCreditMemoInput.cs" />
+    <Compile Include="AccountReceivables\CreditMemos\ICreditMemoAppService.cs" />
     <Compile Include="AccountReceivables\GoodsReceipts\Dto\CreateGoodsReceiptInput.cs" />
     <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptDto.cs" />
     <Compile Include="AccountReceivables\GoodsReceipts\Dto\GoodsReceiptLineDto.cs" />
