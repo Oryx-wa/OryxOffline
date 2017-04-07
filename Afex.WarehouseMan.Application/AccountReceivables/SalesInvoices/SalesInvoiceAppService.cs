@@ -14,6 +14,7 @@ using Abp.Collections.Extensions;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
 using Abp.AutoMapper;
+using Abp.Runtime.Validation;
 
 namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
 {
@@ -36,6 +37,7 @@ namespace Afex.WarehouseMan.AccountReceivables.SalesInvoices
             _itemService = itemService;
         }
 
+        //[DisableValidation]
         public async Task CreateAsync(CreateSalesInvoiceInput input)
         {
             var salesInvoice = new SalesInvoice

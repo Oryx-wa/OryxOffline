@@ -4,6 +4,7 @@
     var app = angular.module('app', [
         'ngAnimate',
         'ngSanitize',
+        'ui.select',
 
         'ui.router',
         'ui.bootstrap',

@@ -15,9 +15,18 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Business Partner</label>
-                                <select class="form-control select2" ng-model="vm.goodsReceipt.cardCode" ng-options="x.id as x.cardName for x in vm.businessPartners" name="CardCode" style="width: 100%;">
+                                @*<select class="form-control select2" ng-model="vm.goodsReceipt.cardCode" ng-options="x.id as x.cardName for x in vm.businessPartners" name="CardCode" style="width: 100%;">
                                     <option value="0">Select Business Partner</option>
-                                </select>
+                                </select>*@
+                                <ui-select ng-model="vm.goodsReceipt.cardCode">
+                                    <ui-select-match placeholder="Select or search a partner in the list...">
+                                        <span ng-bind="$select.selected.cardName"></span>
+                                    </ui-select-match>
+                                    <ui-select-choices repeat="bp.id as bp in (vm.businessPartners | filter: $select.search) track by bp.id">
+                                        <span ng-bind-html="bp.cardName | highlight: $select.search"></span> ---
+                                        <small ng-bind-html="bp.cardCode | highlight: $select.search"></small>
+                                    </ui-select-choices>
+                                </ui-select>
                             </div>
                             <div class="form-group">
                                 <label>Document Number</label>
@@ -84,9 +93,18 @@
                                         <td><input type="checkbox" ng-model="lineItem.selected" /></td>
                                         <td>{{lineItem.rowNumber}}</td>
                                         <td>
-                                            <select class="form-control" ng-model="lineItem.item" ng-options="item as item.itemCode for item in vm.items" name="ItemCode" style="width: 100%;">
+                                            @*<select class="form-control" ng-model="lineItem.item" ng-options="item as item.itemCode for item in vm.items" name="ItemCode" style="width: 100%;">
                                                 <option value="0">Select Item</option>
-                                            </select>
+                                            </select>*@
+                                            <ui-select ng-model="lineItem.item">
+                                                <ui-select-match placeholder="Pick or search a item in the list...">
+                                                    <span ng-bind="$select.selected.itemCode"></span>
+                                                </ui-select-match>
+                                                <ui-select-choices repeat="item in (vm.items | filter: $select.search) track by item.id">
+                                                    <span ng-bind-html="item.itemCode | highlight: $select.search"></span> ---
+                                                    <span ng-bind-html="item.itemName | highlight: $select.search"></span>
+                                                </ui-select-choices>
+                                            </ui-select>
                                         </td>
 
                                         <td><input type="text" class="form-control" ng-model="lineItem.item.itemName" required /></td>

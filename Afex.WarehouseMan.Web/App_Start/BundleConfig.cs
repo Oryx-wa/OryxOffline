@@ -201,6 +201,11 @@ namespace Afex.WarehouseMan.Web
             bundles.Add(new ScriptBundle("~/Scripts/Shared/_Layout").Include(
                 "~/Scripts/Shared/_Layout.js"));
 
+            // plugins | Angular-ui-select
+            bundles.Add(new ScriptBundle("~/Scripts/UISelect/js").Include(
+                    "~/Scripts/select.min.js"
+                ));
+
             //bundles.Add(new ScriptBundle("~/Bundles/App/AdminLTE/js")
             //    .Include("~/AdminLTE/documentation/js/docs.js",
             //    "~/AdminLTE/plugins/bootstrap-slider/js/bootstrap-slider.js", "~/AdminLTE/plugins/bootstrap-wysihtml5/js/bootstrap3-wysihtml5.all.min.js",
@@ -235,6 +240,9 @@ namespace Afex.WarehouseMan.Web
                 "~/AdminLTE/plugins/ionslider/css/ion.rangeSlider.skinNice.css", "~/AdminLTE/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css",
                 "~/AdminLTE/plugins/morris/css/morris.css", "~/AdminLTE/plugins/pace/css/pace.min.css"
                 , "~/AdminLTE/plugins/timepicker/css/bootstrap-timepicker.min.css", "~/AdminLTE/plugins/select2/css/select2.min.css"));
+
+            bundles.Add(new StyleBundle("~/Bundles/App/UISelect/css")
+                .Include("~/Content/select.min.css"));
         }
     }
 }

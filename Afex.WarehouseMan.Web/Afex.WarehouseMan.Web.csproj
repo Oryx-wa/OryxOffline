@@ -1146,6 +1146,8 @@
     <Content Include="Content\flags\famfamfam-flags.png" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\select.css" />
+    <Content Include="Content\select.min.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -1344,6 +1346,7 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Content\select.min.css.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\Examples\Blank-menu.js" />
     <Content Include="Scripts\Examples\Invoice-menu.js" />
@@ -2139,6 +2142,8 @@
     <Content Include="Scripts\others\respond.src.js" />
     <Content Include="Scripts\others\spinjs\jquery.spin.js" />
     <Content Include="Scripts\others\spinjs\spin.js" />
+    <Content Include="Scripts\select.js" />
+    <Content Include="Scripts\select.min.js" />
     <Content Include="Scripts\Shared\_Layout.js" />
     <Content Include="Scripts\sweetalert\ie9.css" />
     <Content Include="Scripts\sweetalert\sweet-alert.css" />
@@ -2202,6 +2207,7 @@
     <Content Include="Views\Account\Login.css.map">
       <DependentUpon>Login.css</DependentUpon>
     </Content>
+    <Content Include="Scripts\select.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

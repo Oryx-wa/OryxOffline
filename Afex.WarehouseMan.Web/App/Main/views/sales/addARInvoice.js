@@ -8,7 +8,7 @@
             $scope.lineItems = [];
 
             vm.salesInvoice = {
-                cardCode: 1,
+                cardCode: '',
                 docNum: '',
                 totalAmount: '',
                 remarks: '',
@@ -40,6 +40,11 @@
                 });
             };
 
+            //$scope.displayValue = function () {
+            //    debugger;
+            //    alert(vm.salesInvoice.cardCode);
+            //}
+
             $scope.rowNum = 1;
 
             $scope.addNew = function (lineItem) {
@@ -50,9 +55,17 @@
                     'quantity': 1,
                     ['item.unitPrice']: ''
                 });
-                
-                //$scope.getTotal();
             };
+
+            //$scope.itemArray = [
+            //    { id: 1, name: 'first' },
+            //    { id: 2, name: 'second' },
+            //    { id: 3, name: 'third' },
+            //    { id: 4, name: 'fourth' },
+            //    { id: 5, name: 'fifth' },
+            //];
+
+            //$scope.selectedItem = $scope.itemArray[0];
 
             $scope.getTotal = function () {
                 var total = 0;
@@ -68,7 +81,7 @@
 
             $scope.getLineTotal = function (lineItem) {
                 var total = 0;
-                if (!lineItem.item.unitPrice)
+                if (lineItem.item == null)
                     return total;
                 total = lineItem.quantity * lineItem.item.unitPrice;
                 return total;
@@ -98,6 +111,7 @@
 
             vm.save = function () {
                 abp.ui.setBusy();
+                debugger;
                 salesInvoiceService.createAsync(vm.salesInvoice).success(function () {
                     abp.notify.success(App.localize('SavedSuccessfully'));
                     $location.path('/salesInvoices');
